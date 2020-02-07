@@ -1,0 +1,168 @@
+svg.text {
+    display: inline;
+    opacity: 1;
+    width: auto;
+    transition: .5s;
+}
+
+svg.animation {
+    display: inline;
+    opacity: 0;
+    width:0;
+    transition: .5s;
+}
+
+a#mengka:hover svg.text {
+    opacity: 0;
+    width: 0;
+}
+
+a#mengka:hover svg.animation {
+    opacity: 1;
+    width: auto;
+}
+
+a#mengka {
+    font-weight: 600;
+    display: inline-block;
+}
+
+#Snow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    pointer-events: none;
+}
+/**********************************************/
+#message-i {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+#message-i i {
+    cursor: pointer;
+}
+.messageShow {
+    font-size: 15px;
+    position: absolute;
+    width: 100px;
+    top:-45px;
+    right: -30px;
+    padding: 10px;
+    border: 2px solid #1a1a1a;
+    background: #ffffff;
+    border-radius: 3px;
+}
+@media (max-width: 991px) {
+    .messageShow{
+        right: -30px;
+    }
+}
+.messageShow:after {
+    content: "";
+    position: absolute;
+    bottom:-14px;
+    left: 10px;
+    width: 14px;
+    height: 14px;
+    border: 7px solid;
+    border-color: #1a1a1a transparent transparent transparent;
+
+}
+.message-modal-header {
+    margin: auto;
+}
+.message-modal-header a {
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+    color: #8590a6;
+}
+.tab-content-overflow {
+    height: 400px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.each-message {
+    border: 2px solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+}
+.add_transform{
+   transform:rotate(180deg);
+   -ms-transform:rotate(180deg); 	/* IE 9 */
+   -moz-transform:rotate(180deg); 	/* Firefox */
+   -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg); 	/* Opera */
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out; /* Firefox 4 */
+    -webkit-transition: all 0.5s ease-in-out; /* Safari 和 Chrome */
+    -o-transition: all 0.5s ease-in-out; /* Opera */
+}
+.to_top {
+    position: fixed;
+    display: block;
+    right:50px;
+    bottom:50px;
+    width:50px;
+    height:50px;
+    background-color: black;
+    border-radius: 2px;
+    opacity:0.7;
+    -moz-box-shadow:2px 2px 5px #333333;
+    -webkit-box-shadow:2px 2px 5px #333333;
+    box-shadow:2px 2px 5px #333333;
+    z-index: 30000;
+}
+.to_top > i {
+    position: relative;
+    left:30%;
+    top:17%;
+    font-size: 2em;
+    font-weight: bold;
+    color:#fff;
+}
+/*footer start*/
+footer {
+    background-color: #ffffff;
+}
+footer div a, footer div b{
+    text-align:center;
+    color: #8590a6;
+    padding: 5px;
+    font-size:15px;
+}
+footer div {
+    text-align:left;
+    line-height: 2;
+    padding:10px;
+}
+footer a:focus, footer a:hover {
+    color: orange;
+    border:1px dotted #8590a6;
+    text-decoration: none;
+}
+footer .top {
+    display: block;
+    position: relative;
+    background-color: #c5454a;
+    color: #ffffff;
+    width: 130px;
+    bottom: -35px;
+    text-align: center;
+}
+footer .bottom-brand {
+    color:red;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+footer #mianze,footer #link {
+    border:1px dotted #8590a6;
+    color:#8590a6;
+}
+/*footer end*/
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #8c8c8c;
+}

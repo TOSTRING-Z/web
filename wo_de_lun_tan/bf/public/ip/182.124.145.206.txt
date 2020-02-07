@@ -1,0 +1,25 @@
+第1次请求:
+Host: www.xn--by-6y6c831p.cn
+X-Real-Ip: 182.124.145.206
+X-Forwarded-For: 182.124.145.206
+Connection: close
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: https://m.baidu.com/tc?from=bd_graph_mm_tc&srd=1&dict=20&src=http%3A%2F%2Fxn--by-6y6c831p.cn%2F&sec=1569979158&di=5ad5fcdd8447f07a
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+
+第2次请求:
+Host: xn--by-6y6c831p.cn
+X-Real-Ip: 182.124.145.206
+X-Forwarded-For: 182.124.145.206
+Connection: close
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: https://www.xn--by-6y6c831p.cn/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Hm_lvt_a4323e55562d0de759b3e2f9674e940d=1569979056; Hm_lpvt_a4323e55562d0de759b3e2f9674e940d=1569979056
+

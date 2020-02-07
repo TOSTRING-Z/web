@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang = "zh-CN">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a4323e55562d0de759b3e2f9674e940d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+<!--百度推送-->
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<head>
+    <meta charset="utf-8">
+    <meta name="baidu-site-verification" content="ilxnPeQXed" />
+    <meta name="baidu_union_verify" content="fe0ff7eda1da13d7efdec34a7723a9fc">
+    <meta name="keywords" content="{% block keywords %}{% endblock %}">
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="icon" type="image/x-icon" href="https://萌咔by.cn/static/public/img/favicon.ico"/>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="{{ url_for( 'static',filename='css/dao_hang_lan.css') }}"/>
+    <link rel="stylesheet" href="/static/public/handsome/handsome.css">
+
+    <link rel="stylesheet" href="{{ url_for( 'static',filename='public/sticky/sticky.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for( 'static',filename='css/style.css') }}"/>
+    <link href="/static/public/mengka/mengka.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="{{ url_for( 'static',filename='js/dao_hang_lan.js') }}"></script>
+    <script src="{{ url_for('static',filename='public/sticky/sticky.js') }}"></script>
+    <style>
+        @media (min-width: 991px) {
+            .white-head {
+                height: 200px;
+                background: url('/static/public/img/site_head.png') fixed no-repeat;opacity: 0.9;
+                background-size:100%;
+                background-position: center -300px;
+            }
+            .log{
+                position:absolute;
+                top:60px;
+                height: 100px;
+                text-align: center;
+                line-height: 100px;
+                width: 100%;
+                font-weight: 900;
+            }
+        }
+        @media (max-width: 990px) {
+            .white-head {
+                height: 100px;
+                background: url('/static/public/img/site_head.png') fixed no-repeat;opacity: 0.9;
+                background-size:100%;
+                background-position: center -50px;
+            }
+            .log{
+                position:absolute;
+                top:0px;
+                height: 100px;
+                text-align: center;
+                line-height: 100px;
+                width: 100%;
+                font-weight: 900;
+                display:none;
+            }
+        }
+    </style>
+</head>
+<div class="white-head"></div>
+<body>
+<div class="log">
+    <svg width="100%" height="100%" style="margin:auto 0;" xmlns="http://www.w3.org/2000/svg">
+        <text stroke-dasharray="90 310" stroke-width="1px" text-shadow="0 0 1px #3498db" stroke="#3498db" fill="none" text-transform="uppercase" y="85%" x="50%" text-anchor="middle" font-size="100" font-family="Makinas-Scrap-5-Cat-and-Sunflower">mkmk<animate attributeName="stroke-dashoffset" begin="-2s" dur="8s" from="0" to="-400" repeatCount="indefinite"></animate></text>
+        <text stroke-dasharray="90 310" stroke-width="1px" text-shadow="0 0 1px #f39c12" stroke="#f39c12" fill="none" text-transform="uppercase" y="85%" x="50%" text-anchor="middle" font-size="100" font-family="Makinas-Scrap-5-Cat-and-Sunflower">mkmk<animate attributeName="stroke-dashoffset" begin="-4s" dur="8s" from="0" to="-400" repeatCount="indefinite"></animate></text>
+        <text stroke-dasharray="90 310" stroke-width="1px" text-shadow="0 0 1px #e74c3c" stroke="#e74c3c" fill="none" text-transform="uppercase" y="85%" x="50%" text-anchor="middle" font-size="100" font-family="Makinas-Scrap-5-Cat-and-Sunflower">mkmk<animate attributeName="stroke-dashoffset" begin="-6s" dur="8s" from="0" to="-400" repeatCount="indefinite"></animate></text>
+        <text stroke-dasharray="90 310" stroke-width="1px" text-shadow="0 0 1px #9b59b6" stroke="#9b59b6" fill="none" text-transform="uppercase" y="85%" x="50%" text-anchor="middle" font-size="100" font-family="Makinas-Scrap-5-Cat-and-Sunflower">mkmk<animate attributeName="stroke-dashoffset" begin="-8s" dur="8s" from="0" to="-400" repeatCount="indefinite"></animate></text>
+   </svg>
+</div>
+
+    <!-- 导航栏开始 -->
+    <nav class="navbar navbar-expand-md bg-black navbar-dark navbar-offcanvas">
+        <div id="loading" class="butterbar active">
+            <span class="bar"></span>
+        </div>
+        <div class="container-fluid">
+
+            <div id="brand">
+            <a id="mengka" class="navbar-brand" href="{{ url_for( 'zi_yuan') }}" style="font-size:22px;font-weight:900;">
+               <svg width="100" height="26" style="margin:-5px;" xmlns="http://www.w3.org/2000/svg">
+                        <text stroke-dasharray="90 310" stroke-width="1px" text-shadow="0 0 1px #3498db" stroke="#3498db" fill="none" text-transform="uppercase" y="85%" x="50%" text-anchor="middle" font-size="25" font-family="Makinas-Scrap-5-Cat-and-Sunflower">mkmk<animate attributeName="stroke-dashoffset" begin="-2s" dur="8s" from="0" to="-400" repeatCount="indefinite"></animate></text>
+                        <text stroke-dasharray="90 310" stroke-width="1px" text-shadow="0 0 1px #f39c12" stroke="#f39c12" fill="none" text-transform="uppercase" y="85%" x="50%" text-anchor="middle" font-size="25" font-family="Makinas-Scrap-5-Cat-and-Sunflower">mkmk<animate attributeName="stroke-dashoffset" begin="-4s" dur="8s" from="0" to="-400" repeatCount="indefinite"></animate></text>
+                        <text stroke-dasharray="90 310" stroke-width="1px" text-shadow="0 0 1px #e74c3c" stroke="#e74c3c" fill="none" text-transform="uppercase" y="85%" x="50%" text-anchor="middle" font-size="25" font-family="Makinas-Scrap-5-Cat-and-Sunflower">mkmk<animate attributeName="stroke-dashoffset" begin="-6s" dur="8s" from="0" to="-400" repeatCount="indefinite"></animate></text>
+                        <text stroke-dasharray="90 310" stroke-width="1px" text-shadow="0 0 1px #9b59b6" stroke="#9b59b6" fill="none" text-transform="uppercase" y="85%" x="50%" text-anchor="middle" font-size="25" font-family="Makinas-Scrap-5-Cat-and-Sunflower">mkmk<animate attributeName="stroke-dashoffset" begin="-8s" dur="8s" from="0" to="-400" repeatCount="indefinite"></animate></text>
+               </svg>
+            </a>
+            {% block brand %}{% endblock %}
+            </div>
+                <ul class="navbar-nav navbar-top" style="font-size:30px;font-weight:600;">
+                <li class="nav-item">
+                    <div class="form-inline">
+                        <form action="/lun_tan" style="opacity: 0.8;width: 93%;">
+                            <div class="input-group input-group-sm" id="search" style="border-radius: 10px;">
+                                <input type="text" name="plate_id" value="{% block plate_id %}{% endblock %}" style="display: none">
+                                <input type="text" name="type" value="quan_bu" style="display: none">
+                                <input onkeyup='keyup(this)' placeholder="快点我搜索(☆ω☆)" required name="search" value="{% block search %}{% endblock %}" type="text" style="border-radius: 10px;" class="form-control">
+                                {% block zi_yuan_search %}{% endblock %}
+                                <div class="input-group-prepend">
+                                    <button type="submit" class="input-group-text">​<svg fill="currentColor" viewBox="0 0 24 24" width="18" height="18"><path d="M17.068 15.58a8.377 8.377 0 0 0 1.774-5.159 8.421 8.421 0 1 0-8.42 8.421 8.38 8.38 0 0 0 5.158-1.774l3.879 3.88c.957.573 2.131-.464 1.488-1.49l-3.879-3.878zm-6.647 1.157a6.323 6.323 0 0 1-6.316-6.316 6.323 6.323 0 0 1 6.316-6.316 6.323 6.323 0 0 1 6.316 6.316 6.323 6.323 0 0 1-6.316 6.316z" fill-rule="evenodd"></path></svg></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% block zi_yuan %}{% endblock %}" href="{{ url_for( 'zi_yuan') }}"><div style="color:#42c9e8;margin-top: 5px;">动漫</div></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% block index %}{% endblock %}" href="{{ url_for( 'index') }}"><div style="color:#ffb300;margin-top: 5px;">论坛</div></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% block liu_yan_ban %}{% endblock %}" href="https://萌咔by.cn/user/1"><div style="color:#fa474b;margin-top: 5px;">留言</div></a>
+                </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right navbar-icon" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar bar1"></span>
+                <span class="icon-bar bar2"></span>
+                <span class="icon-bar bar3"></span>
+            </button>
+            <div class="navbar-collapse collapse ml-auto" id="navbar-mobile" style="font-size:30px;font-weight:600;">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-image">
+                        <div id="message-i" onclick="javascript:messageShow(this)">
+                            <div class="messageShow"></div>
+                            <img class="icon" style='border:0;margin-left:0px;width:80px;height:55px' src="/static/public/img/Mail.svg">
+                        </div>
+
+                        <div id="message_a">
+                            {% if session.get('user_name') %}
+                            <a href="/user/{{ session.get('user_id') }}" style="position: absolute;left: 20px;padding: 0;border-radius: 50%;top: 20px;"><img src="/static/public/img/user/{{ '{0}'.format(session.get('user_id')) }}.png!300-300" alt="{{ session.get('user_name') }}" style="height:3em;width:3em; border-radius:50%;"></a>
+                            <p><i class="fa fa-user-circle" aria-hidden="true"></i> {{ session.get('user_name') }}</p>
+                            <p>{{ session.get('sersonal_signature') }}</p>
+                            {% else %}
+                            <a href="/user/{{ session.get('user_id') }}" style="position: absolute;left: 20px;padding: 0;border-radius: 50%;top: 20px;"><img src="/static/public/img/user/user.jpg!300-300" style="height:3em;width:3em; border-radius:50%;"></a>
+                            <p><i class="fa fa-user-circle" aria-hidden="true"></i> 还没登陆哦(๑•̀ㅁ•́ฅ)</p>
+                            {% endif %}
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        {% if session.get('user_id') %}
+                        <a href="{{ url_for( 're_deng_lu') }}" class="nav-link"><div style="color:#9289f0;">注销</div></a>
+                        {% else %}
+                        <a href="{{ url_for( 'deng_lu') }}" class="nav-link"><div style="color:#9289f0;">登陆</div></a>
+                        {% endif %}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- 导航栏结束 -->
+
+<a class="to_top" style="display: none"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    <canvas id="Snow"></canvas>
+    <!-- 内容开始 -->
+    <div class="wrapper">
+        <div  class="container main">
+            {% block container %}{% endblock %}
+        </div>
+    </div>
+    <!-- 内容结束 -->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-3">
+                <a href="{{ url_for( 'zi_yuan') }}">资源</a><br>
+                <a href="{{ url_for( 'index') }}">交流</a><br>
+            </div>
+            <div class="col-lg-2 col-3">
+                <a href="https://萌咔by.cn/user/1">留言</a><br>
+                <a href="/sitemap.xml">导航</a>
+            </div>
+            <div class="col-lg-2 col-3">
+                {% if session.get('user_id') %}
+                <a href="{{ url_for( 're_deng_lu') }}">注销</a>
+                {% else %}
+                <a href="{{ url_for( 'deng_lu') }}">登陆</a>
+                {% endif %}<br>
+            </div>
+            <div class="col-lg-3 col-8">
+                <b><a data-toggle="collapse" data-target="#link">联系我 &copy; 2019</a></b><b><a data-toggle="collapse" data-target="#mianze">资源免责</a></b><br><b><a data-toggle="collapse" data-target="#">蜀ICP备19029592号-1</a></b><br>
+            </div>
+<div id="link" class="collapse">
+<p>₍ᐢ⸝⸝›   ̫ ‹⸝⸝ᐢ₎欢迎加入萌咔萌咔，群聊号码：<a target="_blank"  href="https://jq.qq.com/?_wv=1027&k=5B8aIMz">253751560</a>(⋈◍＞◡＜◍)</p>
+<p>我的邮箱：1084337496@qq.com</p>
+</div>
+<div id="mianze" class="collapse">
+<p>
+本站不提供任何视听上传服务，所有内容均来自正规视频站点所提供的公开引用资源<p>
+<p>
+本站视频内容均链接到互联网各大视频站点，本小站自身不存储、控制、编辑或修改第三方视频画面及内容。
+</p>
+<p>
+如果您对本站所载视频作品版权的归属存有异议，请立即通知我，我将在第一时间予以删除，同时向你表示歉意！
+</p>
+</div>
+        </div>
+    </div>
+</footer>
+    {% block public %}{% endblock %}
+
+
+    <div class="modal fade" id="ModalMessage" tabindex="-1" role="dialog" aria-labelledby="ModalMessageLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+              <div class="card">
+                  <div class="message-modal-header nav nav-tab">
+                      <a href="#messageXiaoXi" data-toggle="tab" class="message-modal-sel">消息 <span id="messageXiaoXiA"></span></a>
+                      <a href="#messageGuanZhu" data-toggle="tab" >关注 <span id="messageGuanZhuA"></span></a>
+                      <a href="#messageLiuYan" data-toggle="tab" >留言 <span id="messageLiuYanA"></span></a>
+                  </div>
+              </div>
+              <div class="card tab-content">
+                  <div class="tab-pane fade active show" id="messageXiaoXi">
+                                        <div class="tab-content-overflow">
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="messageGuanZhu">
+                      <div class="tab-content-overflow">
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="messageLiuYan">
+                      <div class="tab-content-overflow">
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link rel='stylesheet' id='live2d-base-css'  href='/static/wordpress/wp-content/plugins/Poilive2d/live2d/css/live2d.css' type='text/css' media='all' />
+    <div id="landlord">
+    <div class="message" style="opacity:0"></div>
+    <canvas id="live2d" height="250" class="live2d" style="opacity:0;"></canvas>
+    <div class="hide-button">隐藏</div>
+    <div class="switch-button">变装</div>
+    </div>
+    <script type="text/javascript">
+        var live2d_Path = "https://www.萌咔by.cn:8080/static/wordpress/wp-content/plugins/Poilive2d/live2d/model/pio/";
+        var message_Path = "https://www.萌咔by.cn:8080/static/wordpress/wp-content/plugins/Poilive2d/live2d/";
+        var home_Path = "https://萌咔by.cn/";
+        var nohitokoto = false;
+        var nospecialtip = false;
+        if('{{ session.get('user_name') }}'!='None'){
+        var textStart = '{{ session.get('user_name') }} 我等你很久了(｀⌒´メ)超凶';}
+        else{
+            var textStart = '网站积极开发中(୨୧•͈ᴗ•͈)◞︎ᶫᵒᵛᵉ   ♡';
+        }
+    </script>
+
+    <script type='text/javascript' src='/static/wordpress/wp-content/plugins/Poilive2d/live2d/js/live2d.js'></script>
+    <script type='text/javascript' src='/static/wordpress/wp-content/plugins/Poilive2d/live2d/js/message.js'></script>
+    <script type='text/javascript' src='/static/wordpress/wp-content/plugins/Poilive2d/live2d/js/run_local.js'></script>
+    <script type='text/javascript' src='/static/js/fireObj.js'></script>
+
+    <script>
+        function messageShow(doc){
+            $(".messageShow").remove();
+            $.getJSON("/message",function(data){
+                $("#ModalMessage").modal("show");
+                $("#ModalMessage .modal-backdrop").removeAttr("class");
+                var html = '';
+                var length = 0;
+                for(index in data["response"]){
+                    html += '<div class="each-message" style="padding:20px">\n' +
+                        '                              <a target="_blank" href="/user/'+data["response"][index].response_id+'">\n' +
+                        '                                  <img src="/static/public/img/user/'+data["response"][index].response_id+'.png!100-100" alt="'+data["response"][index].response_name+'" class="align-self-start mr-1 rounded-circle" style="width:20px;margin-top:-3px">\n' +
+                        '                                  '+data["response"][index].response_name+'\n' +
+                        '                              </a>\n' +
+                        '                              <span class="badge">'+data["response"][index].time+'</span>\n' +
+                        '                              <a href="/lun_tan/detail/'+data["response"][index].title_id+'"><i class="fa fa-external-link-square" aria-hidden="true"></i>&nbsp;跳转</a>\n' +
+                        '                              </br></br><p>'+data["response"][index].content+'</p>\n' +
+                        '                          </div>';
+                    length ++;
+                }
+                for(index in data["sourceResponse"]){
+                    html += '<div class="each-message" style="padding:20px">\n' +
+                        '                              <a target="_blank" href="/user/'+data["sourceResponse"][index].user_id+'">\n' +
+                        '                                  <img src="/static/public/img/user/'+data["sourceResponse"][index].user_id+'.png!100-100" alt="'+data["sourceResponse"][index].user_name+'" class="align-self-start mr-1 rounded-circle" style="width:20px;margin-top:-3px">\n' +
+                        '                                  '+data["sourceResponse"][index].user_name+'\n' +
+                        '                              </a>\n' +
+                        '                              <span class="badge">'+data["sourceResponse"][index].time+'</span>\n' +
+                        '                              </br></br><p>'+data["sourceResponse"][index].content+'</p>\n' +
+                        '                          </div>';
+                    length ++;
+                }
+                $("#messageXiaoXiA").text(length);
+                $("#messageXiaoXi .tab-content-overflow").html(html);
+
+                html = '';
+                length = 0;
+                for(index in data["follow"]){
+                   html += '<div class="each-message" style="padding:20px">\n' +
+                        '                            <a target="_blank" href="/user/'+data["follow"][index]["follow_id"]+'">\n' +
+                        '                                <img src="/static/public/img/user/'+data["follow"][index]["follow_id"]+'.png!100-100" alt="'+data["follow"][index]["follow_name"]+'" class="align-self-start mr-1 rounded-circle" style="width:20px;margin-top:-3px">\n' +
+                        '                                '+data["follow"][index]["follow_name"]+'\n' +
+                        '                            </a>\n' +
+                        '                            <span class="badge">'+data["follow"][index]["time"]+'</span>\n' +
+                        '                        </div>';
+                   length ++;
+                }
+
+                $("#messageGuanZhuA").text(length);
+                $("#messageGuanZhu .tab-content-overflow").html(html);
+
+                html = '';
+                length = 0;
+                for(index in data["leaving"]){
+                    html += '<div class="each-message" style="padding:20px">\n' +
+                        '                              <a target="_blank" href="/user/'+data["leaving"][index].user_id+'">\n' +
+                        '                                  <img src="/static/public/img/user/'+data["leaving"][index].user_id+'.png!100-100" alt="'+data["leaving"][index].user_name+'" class="align-self-start mr-1 rounded-circle" style="width:20px;margin-top:-3px">\n' +
+                        '                                  '+data["leaving"][index].user_name+'\n' +
+                        '                              </a>\n' +
+                        '                              <span class="badge">'+data["leaving"][index].time+'</span>\n' +
+                        '                              </br></br><p>'+data["leaving"][index].content+'</p>\n' +
+                        '                          </div>';
+                    length ++;
+                }
+                $("#messageLiuYanA").text(length);
+                $("#messageLiuYan .tab-content-overflow").html(html);
+            })
+        }
+
+        $(document).ready(function(){
+
+            $('input[placeholder~="快点我搜索(☆ω☆)"]').val(function (i,d) {
+                return (d == "None"||d == "0"||d == "")?"快点我搜索(☆ω☆)":d;
+            });
+            $('input[placeholder~="快点我搜索(☆ω☆)"]').click(function (e) {
+                console.log(e.target);
+                e.target.value = e.target.value == "快点我搜索(☆ω☆)"?"":e.target.value;
+            });
+
+            setTimeout(function () {
+                $("#loading").addClass("hide");
+            },1000);
+            $(window).scroll(function() {
+                var scroTop = $(window).scrollTop();
+                if (scroTop > 100) {
+                    $('.to_top').fadeIn(500);
+                } else {
+                    $('.to_top').fadeOut(500);
+                }
+            });
+            $('.to_top').click(function(){
+                $("html,body").animate({scrollTop:0},"fast");
+            });
+
+            $(".message-modal-header a").click(function (e) {
+                $(".message-modal-header a").removeAttr("class");
+                $(this).addClass("message-modal-sel");
+            });
+
+            $(document).click(function (e) {
+                if (e.target.className == "page-link") {
+                    $('img').prop("class", function( i, val ) {
+                        if (!val)
+                            return "img-fluid";
+                        return val;
+                    });
+                }
+            });
+            $('img').prop("class", function( i, val ) {
+                if (!val)
+                    return "img-fluid";
+                return val;
+            });
+
+            $.ajax({
+            url:"/messageAll",
+            success: function (d) {
+                    if(d == '0'){
+                        $(".messageShow").remove();
+                    }
+                    else{
+                        $(".messageShow").html(d+" 条未读");
+                    }
+                },
+                error: function () {
+                    $(".messageShow").remove();
+                }
+            });
+        });
+    </script>
+
+<script>
+    // if(true){
+    //     (function() {
+    //         var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
+    //         function(callback) {
+    //             window.setTimeout(callback, 1000 / 60);
+    //         };
+    //         window.requestAnimationFrame = requestAnimationFrame;
+    //     })();
+    //
+    //     (function()  {
+    //         var flakes = [],
+    //             canvas = document.getElementById("Snow"),
+    //             ctx = canvas.getContext("2d"),
+    //             flakeCount = 520,
+    //             mX = -100,
+    //             mY = -100;
+    //
+    //         canvas.width = window.innerWidth;
+    //         canvas.height = window.innerHeight;
+    //
+    //         function snow() {
+    //             ctx.clearRect(0, 0, canvas.width, canvas.height);
+    //
+    //             for (var i = 0; i < flakeCount; i++) {
+    //                 var flake = flakes[i],
+    //                     x = mX,
+    //                     y = mY,
+    //                     minDist = 200,
+    //                     x2 = flake.x,
+    //                     y2 = flake.y;
+    //
+    //                 var dist = Math.sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y)),
+    //                     dx = x2 - x,
+    //                     dy = y2 - y;
+    //
+    //                 if (dist < minDist) {
+    //                     var force = minDist / (dist * dist),
+    //                         xcomp = (x - x2) / dist,
+    //                         ycomp = (y - y2) / dist,
+    //                         deltaV = force / 2;
+    //
+    //                     flake.velX -= deltaV * xcomp;
+    //                     flake.velY -= deltaV * ycomp;
+    //
+    //                 } else {
+    //                     flake.velX *= .98;
+    //                     if (flake.velY <= flake.speed) {
+    //                         flake.velY = flake.speed
+    //                     }
+    //                     flake.velX += Math.cos(flake.step += .05) * flake.stepSize;
+    //                 }
+    //
+    //                 ctx.fillStyle = "rgba(255,255,255," + flake.opacity + ")";
+    //                 flake.y += flake.velY;
+    //                 flake.x += flake.velX;
+    //
+    //                 if (flake.y >= canvas.height || flake.y <= 0) {
+    //                     reset(flake);
+    //                 }
+    //
+    //                 if (flake.x >= canvas.width || flake.x <= 0) {
+    //                     reset(flake);
+    //                 }
+    //
+    //                 ctx.beginPath();
+    //                 ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
+    //                 ctx.fill();
+    //             }
+    //             requestAnimationFrame(snow);
+    //         }
+    //
+    //         function reset(flake) {
+    //             flake.x = Math.floor(Math.random() * canvas.width);
+    //             flake.y = 0;
+    //             flake.size = (Math.random() * 3) + 2;
+    //             flake.speed = (Math.random() * 1) + 0.5;
+    //             flake.velY = flake.speed;
+    //             flake.velX = 0;
+    //             flake.opacity = (Math.random() * 0.5) + 0.3;
+    //         }
+    //
+    //         function init() {
+    //             for (var i = 0; i < flakeCount; i++) {
+    //                 var x = Math.floor(Math.random() * canvas.width),
+    //                     y = Math.floor(Math.random() * canvas.height),
+    //                     size = (Math.random() * 3) + 2,
+    //                     speed = (Math.random() * 1) + 0.5,
+    //                     opacity = (Math.random() * 0.5) + 0.3;
+    //
+    //                 flakes.push({
+    //                     speed: speed,
+    //                     velY: speed,
+    //                     velX: 0,
+    //                     x: x,
+    //                     y: y,
+    //                     size: size,
+    //                     stepSize: (Math.random()) / 30 * 1,
+    //                     step: 0,
+    //                     angle: 180,
+    //                     opacity: opacity
+    //                 });
+    //             }
+    //             snow();
+    //         }
+    //
+    //         document.addEventListener("mousemove", function(e) {
+    //             mX = e.clientX,
+    //             mY = e.clientY
+    //         });
+    //         window.addEventListener("resize", function() {
+    //             canvas.width = window.innerWidth;
+    //             canvas.height = window.innerHeight;
+    //         });
+    //         init();
+    //     })();
+    // }
+</script>
+
+    </body>
+</html>

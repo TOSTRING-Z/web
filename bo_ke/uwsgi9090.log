@@ -1,0 +1,552 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 20:41:31 2019] ***
+compiled with version: 9.1.0 on 05 October 2019 06:45:28
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /install/web/bo_ke
+writing pidfile to /install/web/bo_ke/uwsgi9090.pid    //pid文件，用于下面的脚本启动、停止该进程
+open("/install/web/bo_ke/uwsgi9090.pid    //pid文件，用于下面的脚本启动、停止该进程"): No such file or directory [core/utils.c line 3616]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 20:42:36 2019] ***
+compiled with version: 9.1.0 on 05 October 2019 06:45:28
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /install/web/bo_ke
+writing pidfile to /install/web/bo_ke/uwsgi9090.pid    //pid文件，用于下面的脚本启动、停止该进程
+open("/install/web/bo_ke/uwsgi9090.pid    //pid文件，用于下面的脚本启动、停止该进程"): No such file or directory [core/utils.c line 3616]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 20:43:44 2019] ***
+compiled with version: 9.1.0 on 05 October 2019 06:45:28
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /install/web/bo_ke
+writing pidfile to /install/web/bo_ke/uwsgi9090.pid    //pid文件，用于下面的脚本启动、停止该进程
+open("/install/web/bo_ke/uwsgi9090.pid    //pid文件，用于下面的脚本启动、停止该进程"): No such file or directory [core/utils.c line 3616]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 20:45:09 2019] ***
+compiled with version: 9.1.0 on 05 October 2019 06:45:28
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /install/web/bo_ke
+writing pidfile to /install/web/bo_ke/uwsgi9090.pid    //pid文件，用于下面的脚本启动、停止该进程
+open("/install/web/bo_ke/uwsgi9090.pid    //pid文件，用于下面的脚本启动、停止该进程"): No such file or directory [core/utils.c line 3616]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 20:46:58 2019] ***
+compiled with version: 9.1.0 on 05 October 2019 06:45:28
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /install/web/bo_ke
+writing pidfile to /install/web/bo_ke/uwsgi9090.pid    //pid文件，用于下面的脚本启动、停止该进程
+open("/install/web/bo_ke/uwsgi9090.pid    //pid文件，用于下面的脚本启动、停止该进程"): No such file or directory [core/utils.c line 3616]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 20:47:23 2019] ***
+compiled with version: 9.1.0 on 05 October 2019 06:45:28
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /install/web/bo_ke
+writing pidfile to /install/web/bo_ke/uwsgi9090.pid    //pid文件，用于下面的脚本启动、停止该进程
+open("/install/web/bo_ke/uwsgi9090.pid    //pid文件，用于下面的脚本启动、停止该进程"): No such file or directory [core/utils.c line 3616]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 20:49:50 2019] ***
+compiled with version: 9.1.0 on 05 October 2019 06:45:28
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /install/web/bo_ke
+writing pidfile to /install/web/bo_ke/uwsgi9090.pid    //pid文件，用于下面的脚本启动、停止该进程
+open("/install/web/bo_ke/uwsgi9090.pid    //pid文件，用于下面的脚本启动、停止该进程"): No such file or directory [core/utils.c line 3616]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 21:00:05 2019] ***
+compiled with version: 9.1.0 on 05 October 2019 06:45:28
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /install/web/bo_ke
+writing pidfile to /install/web/bo_ke/uwsgi9090.pid
+detected binary path: /install/Python/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /install/web/bo_ke/
+your processes number limit is 30815
+limiting address space of processes...
+your process address space limit is 536870912 bytes (512 MB)
+your memory page size is 4096 bytes
+detected max file descriptor number: 4096
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8010 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.1 (default, Jun  2 2019, 17:35:48)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
+Python main interpreter initialized at 0x2406b50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 405552 bytes (396 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file /install/web/bo_ke/wsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10345)
+spawned uWSGI worker 1 (pid: 10346, cores: 2)
+spawned uWSGI worker 2 (pid: 10347, cores: 2)
+*** Stats server enabled on 127.0.0.1:9191 fd: 14 ***
+spawned uWSGI http 1 (pid: 10348)
+Python auto-reloader enabled
+ModuleNotFoundError: No module named 'bo_ke'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+--- no python application found, check your startup logs for errors ---
+[pid: 10346|app: -1|req: -1/1] 127.0.0.1 () {46 vars in 994 bytes} [Mon Nov 25 21:00:42 2019] GET / => generated 21 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+ModuleNotFoundError: No module named 'bo_ke'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+--- no python application found, check your startup logs for errors ---
+[pid: 10346|app: -1|req: -1/2] 127.0.0.1 () {46 vars in 994 bytes} [Mon Nov 25 21:00:44 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 21:00:50 2019] ***
+compiled with version: 9.1.0 on 05 October 2019 06:45:28
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /install/web/bo_ke
+writing pidfile to /install/web/bo_ke/uwsgi9090.pid
+detected binary path: /install/Python/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /install/web/bo_ke/
+your processes number limit is 30815
+limiting address space of processes...
+your process address space limit is 536870912 bytes (512 MB)
+your memory page size is 4096 bytes
+detected max file descriptor number: 4096
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (:8010).
+bind(): Address already in use [core/socket.c line 769]
+ModuleNotFoundError: No module named 'bo_ke'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+--- no python application found, check your startup logs for errors ---
+[pid: 10346|app: -1|req: -1/3] 127.0.0.1 () {48 vars in 1025 bytes} [Mon Nov 25 21:00:55 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+ModuleNotFoundError: No module named 'bo_ke'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+--- no python application found, check your startup logs for errors ---
+[pid: 10346|app: -1|req: -1/4] 127.0.0.1 () {48 vars in 1025 bytes} [Mon Nov 25 21:00:56 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 10347|app: -1|req: -1/5] 127.0.0.1 () {38 vars in 877 bytes} [Mon Nov 25 21:01:00 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 10347|app: -1|req: -1/6] 127.0.0.1 () {36 vars in 815 bytes} [Mon Nov 25 21:01:00 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 10346|app: -1|req: -1/7] 127.0.0.1 () {38 vars in 877 bytes} [Mon Nov 25 21:01:02 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+ModuleNotFoundError: No module named 'bo_ke'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+--- no python application found, check your startup logs for errors ---
+[pid: 10347|app: -1|req: -1/8] 127.0.0.1 () {46 vars in 994 bytes} [Mon Nov 25 21:01:08 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 10347|app: -1|req: -1/9] 127.0.0.1 () {38 vars in 877 bytes} [Mon Nov 25 21:01:49 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+Mon Nov 25 21:03:38 2019 - *** /install/web/bo_ke/ has been touched... grace them all !!! ***
+gateway "uWSGI http 1" has been buried (pid: 10348)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 10346)...
+Gracefully killing worker 2 (pid: 10347)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /install/web/bo_ke
+closing all non-uwsgi socket fds > 2 (max_fd = 4096)...
+found fd 6 mapped to socket 0 (127.0.0.1:9090)
+running /install/Python/bin/uwsgi
+[uWSGI] getting INI configuration from /install/web/bo_ke/uwsgi9090.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 21:03:39 2019] ***
+compiled with version: 9.1.0 on 05 October 2019 06:45:28
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /install/web/bo_ke
+detected binary path: /install/Python/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /install/web/bo_ke/
+your processes number limit is 30815
+limiting address space of processes...
+your process address space limit is 536870912 bytes (512 MB)
+your memory page size is 4096 bytes
+detected max file descriptor number: 4096
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8010 fd 3
+uwsgi socket 0 inherited INET address 127.0.0.1:9090 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.1 (default, Jun  2 2019, 17:35:48)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
+PEP 405 virtualenv detected: /install/web/bo_ke/venv
+Set PythonHome to /install/web/bo_ke/venv
+Python main interpreter initialized at 0x1049600
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 405552 bytes (396 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1049600 pid: 10345 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 10345)
+spawned uWSGI worker 1 (pid: 10433, cores: 2)
+spawned uWSGI worker 2 (pid: 10436, cores: 2)
+*** Stats server enabled on 127.0.0.1:9191 fd: 14 ***
+spawned uWSGI http 1 (pid: 10439)
+Python auto-reloader enabled
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 21:03:47 2019] ***
+compiled with version: 9.1.0 on 05 October 2019 06:45:28
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /install/web/bo_ke
+writing pidfile to /install/web/bo_ke/uwsgi9090.pid
+detected binary path: /install/Python/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /install/web/bo_ke/
+your processes number limit is 30815
+limiting address space of processes...
+your process address space limit is 536870912 bytes (512 MB)
+your memory page size is 4096 bytes
+detected max file descriptor number: 4096
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (:8010).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 10436|app: 0|req: 1/1] 127.0.0.1 () {48 vars in 942 bytes} [Mon Nov 25 13:04:02 2019] GET / => generated 16240 bytes in 206 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+Not Found: /static/css/butterbar.css
+[pid: 10436|app: 0|req: 3/2] 127.0.0.1 () {46 vars in 917 bytes} [Mon Nov 25 13:04:02 2019] GET /static/css/butterbar.css => generated 3327 bytes in 16 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/tailwind.css
+[pid: 10436|app: 0|req: 3/3] 127.0.0.1 () {46 vars in 915 bytes} [Mon Nov 25 13:04:02 2019] GET /static/css/tailwind.css => generated 3324 bytes in 23 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/css/main.css
+[pid: 10433|app: 0|req: 2/4] 127.0.0.1 () {46 vars in 907 bytes} [Mon Nov 25 13:04:02 2019] GET /static/css/main.css => generated 3312 bytes in 214 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/pjax.js
+[pid: 10433|app: 0|req: 2/5] 127.0.0.1 () {46 vars in 888 bytes} [Mon Nov 25 13:04:02 2019] GET /static/js/pjax.js => generated 3306 bytes in 215 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/img/我.jpg
+[pid: 10436|app: 0|req: 4/6] 127.0.0.1 () {46 vars in 907 bytes} [Mon Nov 25 13:04:05 2019] GET /static/img/%E6%88%91.jpg => generated 3315 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/img/我.jpg
+[pid: 10436|app: 0|req: 5/7] 127.0.0.1 () {48 vars in 938 bytes} [Mon Nov 25 13:04:05 2019] GET /static/img/%E6%88%91.jpg => generated 3315 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/js/pjax.js
+[pid: 10433|app: 0|req: 3/8] 127.0.0.1 () {48 vars in 919 bytes} [Mon Nov 25 13:04:05 2019] GET /static/js/pjax.js => generated 3306 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 10436|app: 0|req: 6/9] 127.0.0.1 () {46 vars in 880 bytes} [Mon Nov 25 13:04:05 2019] GET /favicon.ico => generated 3288 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10433|app: 0|req: 4/10] 127.0.0.1 () {48 vars in 942 bytes} [Mon Nov 25 13:09:12 2019] GET / => generated 16240 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 10436|app: 0|req: 7/11] 127.0.0.1 () {54 vars in 1114 bytes} [Mon Nov 25 13:12:10 2019] GET /?_pjax=%23content => generated 16240 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 10436|app: 0|req: 8/12] 127.0.0.1 () {54 vars in 1130 bytes} [Mon Nov 25 13:12:13 2019] GET /archives?_pjax=%23content => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 132 bytes (1 switches on core 0)
+[pid: 10436|app: 0|req: 9/13] 127.0.0.1 () {54 vars in 1132 bytes} [Mon Nov 25 13:12:13 2019] GET /archives/?_pjax=%23content => generated 16235 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 10436|app: 0|req: 10/14] 127.0.0.1 () {54 vars in 1122 bytes} [Mon Nov 25 13:12:15 2019] GET /?_pjax=%23content => generated 16240 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./bo_ke/models.py has been modified
+[uwsgi-python-reloader] module/file ./bo_ke/models.py has been modified
+gateway "uWSGI http 1" has been buried (pid: 10439)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 10433)...
+Gracefully killing worker 2 (pid: 10436)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /install/web/bo_ke
+closing all non-uwsgi socket fds > 2 (max_fd = 4096)...
+found fd 6 mapped to socket 0 (127.0.0.1:9090)
+running /install/Python/bin/uwsgi
+[uWSGI] getting INI configuration from /install/web/bo_ke/uwsgi9090.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 13:13:48 2019] ***
+compiled with version: 9.1.0 on 05 October 2019 06:45:28
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /install/web/bo_ke
+detected binary path: /install/Python/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /install/web/bo_ke/
+your processes number limit is 30815
+limiting address space of processes...
+your process address space limit is 536870912 bytes (512 MB)
+your memory page size is 4096 bytes
+detected max file descriptor number: 4096
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8010 fd 3
+uwsgi socket 0 inherited INET address 127.0.0.1:9090 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.1 (default, Jun  2 2019, 17:35:48)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
+PEP 405 virtualenv detected: /install/web/bo_ke/venv
+Set PythonHome to /install/web/bo_ke/venv
+Python main interpreter initialized at 0x27f4500
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 405552 bytes (396 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x27f4500 pid: 10345 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 10345)
+spawned uWSGI worker 1 (pid: 10626, cores: 2)
+spawned uWSGI worker 2 (pid: 10627, cores: 2)
+*** Stats server enabled on 127.0.0.1:9191 fd: 14 ***
+Python auto-reloader enabled
+spawned uWSGI http 1 (pid: 10632)
+[pid: 10626|app: 0|req: 1/1] 127.0.0.1 () {46 vars in 923 bytes} [Mon Nov 25 13:18:13 2019] GET /1/json => generated 0 bytes in 198 msecs (HTTP/1.1 301) 3 headers in 113 bytes (1 switches on core 0)
+[pid: 10627|app: 0|req: 1/2] 127.0.0.1 () {46 vars in 925 bytes} [Mon Nov 25 13:18:13 2019] GET /1/json/ => generated 1346 bytes in 1993 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10627|app: 0|req: 2/3] 127.0.0.1 () {46 vars in 911 bytes} [Mon Nov 25 13:20:02 2019] GET / => generated 16240 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 10627|app: 0|req: 3/4] 127.0.0.1 () {48 vars in 948 bytes} [Mon Nov 25 13:20:05 2019] GET /0/json => generated 0 bytes in 2 msecs (HTTP/1.1 301) 3 headers in 113 bytes (1 switches on core 0)
+[pid: 10627|app: 0|req: 4/5] 127.0.0.1 () {48 vars in 950 bytes} [Mon Nov 25 13:20:05 2019] GET /0/json/ => generated 1674 bytes in 213 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10627|app: 0|req: 5/6] 127.0.0.1 () {48 vars in 948 bytes} [Mon Nov 25 13:20:05 2019] GET /4/json => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 113 bytes (1 switches on core 0)
+[pid: 10627|app: 0|req: 6/7] 127.0.0.1 () {48 vars in 950 bytes} [Mon Nov 25 13:20:05 2019] GET /4/json/ => generated 22 bytes in 213 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 10627|app: 0|req: 7/8] 127.0.0.1 () {54 vars in 1122 bytes} [Mon Nov 25 13:20:13 2019] GET /goal?_pjax=%23content => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 128 bytes (1 switches on core 1)
+[pid: 10626|app: 0|req: 2/9] 127.0.0.1 () {54 vars in 1124 bytes} [Mon Nov 25 13:20:13 2019] GET /goal/?_pjax=%23content => generated 17621 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 10627|app: 0|req: 8/10] 127.0.0.1 () {54 vars in 1118 bytes} [Mon Nov 25 13:20:15 2019] GET /?_pjax=%23content => generated 16240 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 10626|app: 0|req: 3/11] 127.0.0.1 () {48 vars in 948 bytes} [Mon Nov 25 13:20:15 2019] GET /0/json => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 113 bytes (1 switches on core 0)
+[pid: 10626|app: 0|req: 4/12] 127.0.0.1 () {48 vars in 950 bytes} [Mon Nov 25 13:20:15 2019] GET /0/json/ => generated 1674 bytes in 1932 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10627|app: 0|req: 9/13] 127.0.0.1 () {48 vars in 950 bytes} [Mon Nov 25 13:20:17 2019] GET /4/json/ => generated 22 bytes in 203 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 10627|app: 0|req: 10/14] 127.0.0.1 () {54 vars in 1124 bytes} [Mon Nov 25 13:20:23 2019] GET /about?_pjax=%23content => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 129 bytes (1 switches on core 0)
+[pid: 10626|app: 0|req: 5/15] 127.0.0.1 () {54 vars in 1126 bytes} [Mon Nov 25 13:20:23 2019] GET /about/?_pjax=%23content => generated 16663 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 10627|app: 0|req: 11/16] 127.0.0.1 () {54 vars in 1119 bytes} [Mon Nov 25 13:20:26 2019] GET /?_pjax=%23content => generated 16240 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 10626|app: 0|req: 6/17] 127.0.0.1 () {48 vars in 950 bytes} [Mon Nov 25 13:20:26 2019] GET /0/json/ => generated 1674 bytes in 226 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10626|app: 0|req: 7/18] 127.0.0.1 () {48 vars in 950 bytes} [Mon Nov 25 13:20:26 2019] GET /4/json/ => generated 22 bytes in 211 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 10626|app: 0|req: 8/19] 127.0.0.1 () {54 vars in 1126 bytes} [Mon Nov 25 13:20:35 2019] GET /about/?_pjax=%23content => generated 16663 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 10627|app: 0|req: 12/20] 127.0.0.1 () {54 vars in 1119 bytes} [Mon Nov 25 13:20:39 2019] GET /?_pjax=%23content => generated 16240 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 10627|app: 0|req: 13/21] 127.0.0.1 () {48 vars in 950 bytes} [Mon Nov 25 13:20:39 2019] GET /0/json/ => generated 1674 bytes in 247 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10627|app: 0|req: 14/22] 127.0.0.1 () {48 vars in 950 bytes} [Mon Nov 25 13:20:39 2019] GET /4/json/ => generated 22 bytes in 227 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+Mon Nov 25 13:32:30 2019 - *** /install/web/bo_ke/ has been touched... grace them all !!! ***
+gateway "uWSGI http 1" has been buried (pid: 10632)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 10626)...
+Gracefully killing worker 2 (pid: 10627)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /install/web/bo_ke
+closing all non-uwsgi socket fds > 2 (max_fd = 4096)...
+found fd 6 mapped to socket 0 (127.0.0.1:9090)
+running /install/Python/bin/uwsgi
+[uWSGI] getting INI configuration from /install/web/bo_ke/uwsgi9090.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 13:32:31 2019] ***
+compiled with version: 9.1.0 on 05 October 2019 06:45:28
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /install/web/bo_ke
+detected binary path: /install/Python/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /install/web/bo_ke/
+your processes number limit is 30815
+limiting address space of processes...
+your process address space limit is 536870912 bytes (512 MB)
+your memory page size is 4096 bytes
+detected max file descriptor number: 4096
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8010 fd 3
+uwsgi socket 0 inherited INET address 127.0.0.1:9090 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.1 (default, Jun  2 2019, 17:35:48)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
+PEP 405 virtualenv detected: /install/web/bo_ke/venv
+Set PythonHome to /install/web/bo_ke/venv
+Python main interpreter initialized at 0x121f500
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 405552 bytes (396 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x121f500 pid: 10345 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 10345)
+spawned uWSGI worker 1 (pid: 11374, cores: 2)
+spawned uWSGI worker 2 (pid: 11377, cores: 2)
+Python auto-reloader enabled
+*** Stats server enabled on 127.0.0.1:9191 fd: 14 ***
+spawned uWSGI http 1 (pid: 11378)
+Mon Nov 25 13:32:56 2019 - *** /install/web/bo_ke/ has been touched... grace them all !!! ***
+gateway "uWSGI http 1" has been buried (pid: 11378)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 11374)...
+Gracefully killing worker 2 (pid: 11377)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /install/web/bo_ke
+closing all non-uwsgi socket fds > 2 (max_fd = 4096)...
+found fd 6 mapped to socket 0 (127.0.0.1:9090)
+running /install/Python/bin/uwsgi
+[uWSGI] getting INI configuration from /install/web/bo_ke/uwsgi9090.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 13:32:57 2019] ***
+compiled with version: 9.1.0 on 05 October 2019 06:45:28
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /install/web/bo_ke
+detected binary path: /install/Python/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /install/web/bo_ke/
+your processes number limit is 30815
+limiting address space of processes...
+your process address space limit is 536870912 bytes (512 MB)
+your memory page size is 4096 bytes
+detected max file descriptor number: 4096
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8010 fd 3
+uwsgi socket 0 inherited INET address 127.0.0.1:9090 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.1 (default, Jun  2 2019, 17:35:48)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
+PEP 405 virtualenv detected: /install/web/bo_ke/venv
+Set PythonHome to /install/web/bo_ke/venv
+Python main interpreter initialized at 0x2220500
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 405552 bytes (396 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2220500 pid: 10345 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 10345)
+spawned uWSGI worker 1 (pid: 11406, cores: 2)
+spawned uWSGI worker 2 (pid: 11409, cores: 2)
+*** Stats server enabled on 127.0.0.1:9191 fd: 14 ***
+Python auto-reloader enabled
+spawned uWSGI http 1 (pid: 11410)
+[pid: 11409|app: 0|req: 1/1] 127.0.0.1 () {48 vars in 942 bytes} [Mon Nov 25 13:34:41 2019] GET / => generated 16247 bytes in 223 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 11406|app: 0|req: 1/2] 127.0.0.1 () {54 vars in 1114 bytes} [Mon Nov 25 13:34:59 2019] GET /?_pjax=%23content => generated 16247 bytes in 233 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 11409|app: 0|req: 2/3] 127.0.0.1 () {54 vars in 1122 bytes} [Mon Nov 25 13:35:03 2019] GET /tags?_pjax=%23content => generated 0 bytes in 4 msecs (HTTP/1.1 301) 3 headers in 128 bytes (1 switches on core 1)
+[pid: 11409|app: 0|req: 3/4] 127.0.0.1 () {54 vars in 1124 bytes} [Mon Nov 25 13:35:03 2019] GET /tags/?_pjax=%23content => generated 16126 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 11409|app: 0|req: 4/5] 127.0.0.1 () {38 vars in 876 bytes} [Mon Nov 25 14:05:09 2019] GET / => generated 16247 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+Not Found: /static/css/tailwind.css
+[pid: 11409|app: 0|req: 5/6] 127.0.0.1 () {38 vars in 880 bytes} [Mon Nov 25 14:05:09 2019] GET /static/css/tailwind.css => generated 3324 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/css/butterbar.css
+[pid: 11406|app: 0|req: 3/7] 127.0.0.1 () {38 vars in 882 bytes} [Mon Nov 25 14:05:09 2019] GET /static/css/butterbar.css => generated 3327 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/css/main.css
+[pid: 11406|app: 0|req: 3/8] 127.0.0.1 () {38 vars in 872 bytes} [Mon Nov 25 14:05:09 2019] GET /static/css/main.css => generated 3312 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/pjax.js
+[pid: 11409|app: 0|req: 6/9] 127.0.0.1 () {38 vars in 853 bytes} [Mon Nov 25 14:05:09 2019] GET /static/js/pjax.js => generated 3306 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/img/我.jpg
+[pid: 11409|app: 0|req: 7/10] 127.0.0.1 () {38 vars in 872 bytes} [Mon Nov 25 14:05:10 2019] GET /static/img/%E6%88%91.jpg => generated 3315 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/img/我.jpg
+[pid: 11406|app: 0|req: 4/11] 127.0.0.1 () {38 vars in 873 bytes} [Mon Nov 25 14:05:10 2019] GET /static/img/%E6%88%91.jpg => generated 3315 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/js/pjax.js
+[pid: 11409|app: 0|req: 8/12] 127.0.0.1 () {38 vars in 854 bytes} [Mon Nov 25 14:05:10 2019] GET /static/js/pjax.js => generated 3306 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 11409|app: 0|req: 9/13] 127.0.0.1 () {46 vars in 994 bytes} [Mon Nov 25 14:05:16 2019] GET / => generated 16247 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+Thu Nov 28 16:21:51 2019 - *** /install/web/bo_ke/ has been touched... grace them all !!! ***
+gateway "uWSGI http 1" has been buried (pid: 11410)
+...gracefully killing workers...
+Gracefully killing worker 2 (pid: 11409)...
+Gracefully killing worker 1 (pid: 11406)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /install/web/bo_ke
+closing all non-uwsgi socket fds > 2 (max_fd = 4096)...
+found fd 6 mapped to socket 0 (127.0.0.1:9090)
+running /install/Python/bin/uwsgi
+[uWSGI] getting INI configuration from /install/web/bo_ke/uwsgi9090.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Nov 28 16:21:52 2019] ***
+compiled with version: 9.1.0 on 05 October 2019 06:45:28
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /install/web/bo_ke
+detected binary path: /install/Python/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /install/web/bo_ke/
+your processes number limit is 30815
+limiting address space of processes...
+your process address space limit is 536870912 bytes (512 MB)
+your memory page size is 4096 bytes
+detected max file descriptor number: 4096
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8010 fd 3
+uwsgi socket 0 inherited INET address 127.0.0.1:9090 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.1 (default, Jun  2 2019, 17:35:48)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
+PEP 405 virtualenv detected: /install/web/bo_ke/venv
+Set PythonHome to /install/web/bo_ke/venv
+Python main interpreter initialized at 0xab4500
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 405552 bytes (396 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xab4500 pid: 10345 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 10345)
+spawned uWSGI worker 1 (pid: 13203, cores: 2)
+spawned uWSGI worker 2 (pid: 13204, cores: 2)
+*** Stats server enabled on 127.0.0.1:9191 fd: 14 ***
+spawned uWSGI http 1 (pid: 13205)
+Python auto-reloader enabled

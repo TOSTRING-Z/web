@@ -1,0 +1,457 @@
+{% extends "public.html" %}
+{% block title %}
+    M站_萌咔萌咔弹幕视频网_干净的动漫网站(´っω･｀｡):{{ detail_main.title }}
+{% endblock %}
+{% block keywords %}{{ detail_main.title }}{% endblock %}
+{% block description %}{{ detail_main.description|safe }}{% endblock %}
+{% block index %}{{ 'active' }}{% endblock %}
+{% block brand %}<a id="this" style="line-height:30px;width:230px;text-overflow:ellipsis;color:#fff;display: none;font-size: 20px;overflow:hidden;white-space: nowrap">{{ detail_main.title }}</a>{% endblock %}
+{% block container %}
+
+    <link href="{{ url_for( 'static',filename='public/summernote/summernote-bs4.css') }}" rel="stylesheet"/>
+    <script type="text/javascript" src="{{ url_for( 'static',filename='public/summernote/summernote-bs4.js') }}"></script>
+    <style>
+    .note-editor.note-frame {
+        border: 1px solid #f0f0f0;
+        border-radius: 0 0 3px 3px;
+    }
+   .lv-2 {
+        color:#ffffff;
+        font-weight: bold;
+        font-size: 13px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        position: absolute;
+        bottom: 0;
+        left:15px;
+        padding: 0 2px;
+    }
+    @media (max-width: 990px) {
+       .lv-2 {
+           left:13px;
+       }
+    }
+    .lv-1 {
+        color:#ffffff;
+        font-weight: bold;
+        font-size: 10px;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        position: absolute;
+        bottom: 0;
+        padding: 0 2px;
+    }
+    .lv {
+        display: inline-block;
+        position: relative;
+        bottom: 4px;
+        left: 5px;
+        width: 40px;
+        vertical-align: bottom;
+    }
+    textarea.form-control {
+        border: 1px solid #f0f0f0;
+        font-size: 28px;
+        line-height: 1;
+        height: calc(2.25rem + 2px);
+        border-radius: 3px 3px 0 0;
+    }
+    .note-popover .popover-content, .card-header.note-toolbar {
+        margin: 0;
+        background: #ffffff;
+    }
+    </style>
+
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-body row">
+                    <div class="col-lg-8">
+                        <h4>{{ detail_main.title }}</h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <button type="button" class="btn btn-primary" data-title_id="{{ detail_main.title_id }}" data-title_name="{{ detail_main.title }}" id="shouCang">
+                            {% if detail_main.title_id in user_collection %}
+                            已收藏
+                            {% else %}
+                            <b>+</b> 收藏
+                            {% endif %}
+                        </button>
+                        <button type="button" class="btn btn-primary" data-up_id="{{ detail_main.up_id }}" id="guanZhu">
+                            {% if detail_main.up_id in user_follow %}
+                            已关注
+                            {% else %}
+                            <b>+</b> 关注
+                            {% endif %}
+                        </button>
+                    </div>
+                    <script>
+                        $("#shouCang").click(function (e) {
+                            var title_id = $(e.currentTarget).data("title_id");
+                            var title_name = $(e.currentTarget).data("title_name");
+                            $.ajax({
+                                url:"/shouCang/"+title_id+"/"+title_name,
+                                beforeSend:function(){
+                                  $("#loading").removeClass("hide");
+                                },
+                                complete:function () {
+                                    $("#loading").addClass("hide");
+                                },
+                                success: function (d) {
+                                    $("#shouCangModal").modal("show");
+                                    $(".modal-backdrop").removeAttr("class");
+                                    $("#shouCangModal .modal-body").html(d);
+                                    if(d == "收藏成功!")
+                                        $("#shouCang").html("已收藏");
+                                    else
+                                        $("#shouCang").html("<b>+</b> 收藏");
+                                },
+                                error:function () {
+                                    $("#shouCangModal").modal("show");
+                                    $(".modal-backdrop").removeAttr("class");
+                                    $("#shouCangModal .modal-body").html("提交失败!")
+                                }
+                            })
+                        });
+                        $("#guanZhu").click(function (e) {
+                            var up_id = $(e.currentTarget).data("up_id");
+                            $.ajax({
+                                url:"/guanZhu/"+up_id,
+                                beforeSend:function(){
+                                  $("#loading").removeClass("hide");
+                                },
+                                complete:function () {
+                                    $("#loading").addClass("hide");
+                                },
+                                success: function (d) {
+                                    $("#guanZhuModal").modal("show");
+                                    $(".modal-backdrop").removeAttr("class");
+                                    $("#guanZhuModal .modal-body").html(d);
+                                    if(d == "关注成功!")
+                                        $("#guanZhu").html("已关注");
+                                    else
+                                        $("#guanZhu").html("<b>+</b> 关注");
+                                },
+                                error:function () {
+                                    $("#guanZhuModal").modal("show");
+                                    $(".modal-backdrop").removeAttr("class");
+                                    $("#guanZhuModal .modal-body").html("提交失败!")
+                                }
+                            })
+                        });
+                    </script>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <p>
+                        {{ detail_main.subtitle|safe }}
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <table class="table" id="table_detail" style="width:100%">
+                        <thead style="display: none">
+                          <tr>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <ul class="pagination" id="table_detail_ul"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card fixedsticky" style="top:67px">
+                    <div class="card-body">
+                        <div class="media">
+                            <a target="_blank" href="/user/{{ detail_main.up_id }}"><img src="{{ url_for( 'static',filename='public/img/user/{0}'.format(detail_main.up_id)) }}.png!200-200" class="align-self-start mr-3 rounded-circle" style="width:60px"></a>
+                            <div class="media-body">
+                                <p><h4 style="inline-height:1.5">{{ detail_main.up_name }}</h4></p>
+                                <button class="button-up" id="up" data-up={{request.cookies.get('{0}data-up{1}'.format(session.get('user_id'),detail_main.title_id))}} type="button"><span style="display: inline-flex; align-items: center">​<svg fill="currentColor" viewBox="0 0 24 24" width="10" height="10"><path d="M2 18.242c0-.326.088-.532.237-.896l7.98-13.203C10.572 3.57 11.086 3 12 3c.915 0 1.429.571 1.784 1.143l7.98 13.203c.15.364.236.57.236.896 0 1.386-.875 1.9-1.955 1.9H3.955c-1.08 0-1.955-.517-1.955-1.9z"></path></svg></span><b> 赞同 </b><b id="up_num">{{ detail_main.up_num }} </b></button>
+                                <button class="button-down" id="down" type="button"><span style="display: inline-flex; align-items: center;">​<svg fill="currentColor" viewBox="0 0 24 24" width="10" height="10"><path d="M20.044 3H3.956C2.876 3 2 3.517 2 4.9c0 .326.087.533.236.896L10.216 19c.355.571.87 1.143 1.784 1.143s1.429-.572 1.784-1.143l7.98-13.204c.149-.363.236-.57.236-.896 0-1.386-.876-1.9-1.956-1.9z"></path></svg></span></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            <div class="card fixedsticky" style="top:186px;">
+                <div class="card-body">
+                    <h4 class="widget-title">回复他</h4>
+                    <div id="summernote"></div>
+                    <form id="forms" action="/detail_message" method="post">
+                        <input type="text" style="display:none" id="content" name="content">
+                        <input type="text" style="display:none" id="title_id" value="{{ detail_main.title_id }}" name="title_id">
+                        <input type="text" style="display:none" id="up_id" value="{{ detail_main.up_id }}" name="up_id">
+                        <input type="text" name="imgName" id="imgName" style="display: none">
+                    </form>
+                    <button type="button" id="submit" class="btn btn-primary">回复</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="shouCangModal" tabindex="-1" role="dialog" aria-labelledby="shouCangModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-body">
+        收藏成功!
+        </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="guanZhuModal" tabindex="-1" role="dialog" aria-labelledby="guanZhuModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        关注成功!
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <form method="post" action="/conmment_response">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">评论</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="form-group">
+                <input type="text" style="display: none" class="form-control" id="detail_id" name="detail_id">
+                <input type="text" style="display: none" class="form-control" id="target_title_id" name="target_title_id">
+                <input type="text" style="display: none" class="form-control" id="user_id" name="user_id">
+              </div>
+              <div class="form-group">
+                <textarea type="text" class="form-control" oninput="check(this)" required id="conmment_content" name="content"></textarea>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" onclick="return check_all()" class="btn btn-primary">发送</button>
+          </div>
+        </form>
+    </div>
+  </div>
+</div>
+    <script>
+    function check(e){
+        if (e.value == "")
+        e.setCustomValidity("请输入内容!");
+        else
+        e.setCustomValidity("");
+    }
+    function check_all(){
+        var content = document.getElementById("conmment_content");
+        content.setCustomValidity("");
+        if (content.checkValidity() == false||content.value == "")
+        content.setCustomValidity("请输入内容!");
+        else
+        content.setCustomValidity("");
+    }
+
+        function modalData(e){
+            setTimeout(function () {
+                document.getElementById("conmment_content").setCustomValidity("请输入内容!");
+                $("#detail_id").attr("value",$(e).data("detail_id"));
+                $("#target_title_id").attr("value",$(e).data("target_title_id"));
+                $("#user_id").attr("value",$(e).data("user_id"));
+            }, 300);
+        }
+    </script>
+{% endblock %}
+{% block public %}
+    <script src="{{ url_for( 'static',filename='js/datatable.js') }}"></script>
+    <!-- 初始化表格 -->
+    <script type="text/javascript">
+        var data_table_detail = {{ data|safe }};
+        var table_detail = new table("table_detail",data_table_detail);
+        table_detail;
+    </script>
+    <!-- 初始化表格结束 -->
+    <script>
+        var imgName = "";
+        // 初始化插件
+        $(function () {
+            $("#summernote").summernote();
+        });
+        var $summernote = $("#summernote");
+        $summernote.summernote({
+            placeholder: '请输入内容',
+            tabsize: 1,
+            // 高度与焦点
+            height:200,
+            // 对话框显示在body而非summernote
+            dialogsInBody: true,
+            dialogsFade:true,
+            // 图片上传
+            callbacks: {
+                onImageUpload: function(files) {
+                    sendFile(files[0]);
+                }
+            }
+        });
+        function sendFile(file) {
+            data = new FormData();
+            data.append("file", file);
+            $.ajax({
+                data: data,
+                type: "POST",
+                url: "/uploadDetail",
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function(url) {
+                    $summernote.summernote('insertImage',url);
+                    imgName = imgName+"|"+url;
+                    document.getElementById("imgName").value = imgName;
+                },
+                error:function () {
+                    alert("上传失败");
+                }
+            });
+        }
+        $('#summernote').summernote('code','');
+        $("#submit").click(function () {
+            var subtitle = $('#summernote').summernote('code');
+            $("#content").attr("value",subtitle);
+            if (subtitle != ""&&subtitle != "<br>" && subtitle.length > 2){
+               document.getElementById("forms").submit();
+            }
+            else{
+                $('#summernote').summernote('code','');
+                alert("输入字符个数需要大于2!");
+            }
+        });
+        $(".note-toolbar").attr("style","");
+    </script>
+    <script>
+    if(($("#up").data("up")!="None")){
+        $("#up").css("background","linear-gradient(to right,#fb7c4d 0,#fc9d78 100%)");
+        $("#up").css("color","#ffffff");
+        $("#up .modal a,#up span").css("color","#ffffff");
+        $("#down .modal a,#down span").css("color","#8590a6");
+    }
+    $("#up").click(function (e) {
+        if($("#up").data("up")=="None"){
+            $.ajax({
+                url:"/detail_main_up_down/{{ detail_main.title_id }}/up",
+                beforeSend:function(){
+                  $("#loading").removeClass("hide");
+                },
+                complete:function () {
+                    $("#loading").addClass("hide");
+                },
+                success:function (d) {
+                    $.ajax({url:"/set_cookie/{{ session.get('user_id') }}/{{ detail_main.title_id }}/Have"});
+                    $("#up").data("up","Have");
+                    $("#up_num").text(d);
+                    $("#up").css("background","linear-gradient(to right,#fb7c4d 0,#fc9d78 100%)");
+                    $("#up").css("color","#ffffff");
+                    $("#down").css("background","#f6f6f6");
+                    $("#down").css("color","#8590a6");
+                    $("#up .modal a,#up span").css("color","#ffffff");
+                    $("#down .modal a,#down span").css("color","#8590a6");
+                }
+            })
+        }
+    });
+    $("#down").click(function (e) {
+        if($("#up").data("up")!="None"){
+            $.ajax({
+                url:"/detail_main_up_down/{{ detail_main.title_id }}/down",
+                beforeSend:function(){
+                  $("#loading").removeClass("hide");
+                },
+                complete:function () {
+                    $("#loading").addClass("hide");
+                },
+                success:function (d) {
+                    $.ajax({url:"/set_cookie/{{ session.get('user_id') }}/{{ detail_main.title_id }}/None"});
+                    $("#up").data("up","None");
+                    $("#up_num").text(d);
+                    $("#up").css("background","#f6f6f6");
+                    $("#up").css("color","#8590a6");
+                    $("#down").css("background","linear-gradient(to right,#fb7c4d 0,#fc9d78 100%)");
+                    $("#down").css("color","#ffffff");
+                    $("#up .modal a,#up span").css("color","#8590a6");
+                    $("#down .modal a,#down span").css("color","#ffffff");
+                }
+            })
+        }
+    });
+
+    function close_comment(detail_id) {
+        $("#slide"+detail_id).slideToggle();
+        $("#slide"+detail_id).html("");
+    }
+    function comment(e) {
+        var detail_id = $(e).data("detail_id");
+        $.ajax({
+            url:"/comment/"+detail_id,
+            beforeSend:function(){
+              $("#loading").removeClass("hide");
+            },
+            dataType:"JSON",
+            success: function (data) {
+
+                let html = '<div class="card">\n' +
+                    '                <div class="card-body">\n' +
+                    '                    <table class="table" id="table_content'+detail_id+'" style="width:100%">\n' +
+                    '                        <thead style="display: none">\n' +
+                    '                          <tr>\n' +
+                    '                            <th></th>\n' +
+                    '                          </tr>\n' +
+                    '                        </thead>\n' +
+                    '                        <tbody></tbody>\n' +
+                    '                    </table>\n' +
+                    '                    <ul class="pagination" id="table_content'+detail_id+'_ul"></ul>\n' +
+                    '<button type="button" onclick="close_comment(\''+detail_id+'\')" class="btn btn-primary btn-close">收起</button>' +
+                    '                </div>\n' +
+                    '            </div>';
+                $("#slide"+detail_id).html(html);
+                $("#slide"+detail_id).slideToggle();
+                $("#loading").addClass("hide");
+                let data_table_content = data;
+                let table_content = new table("table_content"+detail_id,data_table_content);
+                table_content;
+
+            }
+        })
+    }
+    $(document).ready(function() {
+        //为当前窗口添加滚动条滚动事件（适用于所有可滚动的元素和 window 对象（浏览器窗口））
+        $(window).scroll(function () {
+            //创建一个变量存储当前窗口下移的高度
+            var scroTop = $(window).scrollTop();
+            //判断当前窗口滚动高度
+            //如果大于100，则显示顶部元素，否则隐藏顶部元素
+            if (scroTop > 100) {
+                $('#mengka').fadeOut(250,function(){
+                    $('#this').fadeIn(250).css('display','block');
+                });
+
+            } else {
+                $('#this').fadeOut(250,function(){
+                    $('#mengka').fadeIn(250);
+                });
+            }
+        });
+    })
+</script>
+<style>
+.note-editor.note-frame {
+    width: 100%;
+    border: 0;
+}
+</style>
+{% endblock %}

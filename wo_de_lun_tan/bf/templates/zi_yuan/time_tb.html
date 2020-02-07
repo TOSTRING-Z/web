@@ -1,0 +1,194 @@
+{% extends "public.html" %}
+{% block title %}
+    M站_萌咔萌咔弹幕视频网_干净的动漫网站(´っω･｀｡):连载时间表
+{% endblock %}
+{% block keywords %}萌咔萌咔,新番连载{% endblock %}
+{% block description %}萌咔萌咔新番连载{% endblock %}
+{% block zi_yuan %}{{ 'active' }}{% endblock %}
+{% block search %}{{ search }}{% endblock %}
+{% block zi_yuan_search %}
+<input type="text" name="zi_yuan_search_type" value="source" style="display: none">
+{% endblock %}
+{% block brand %}<a id="this" style="color:#fff;display: none" href="/zi_yuan/time_tb"><img src="/static/public/img/时间表.svg" class="icon">时间</a>{% endblock %}
+{% block container %}
+    <style>
+        .nav-tab a{
+            padding:5px;
+            margin: 10px auto 0;
+            color: #8590a6;
+            position: relative;
+            font-size:13px;
+        }
+    </style>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card" style="overflow: visible;">
+                <div class="card-header" style="overflow: visible;" id="DayOfWeek">
+                    <div class="nav nav-tab message-modal-header">
+                        <a href="#day0" data-toggle="tab" >周日</a>
+                        <a href="#day1" data-toggle="tab" >周一</a>
+                        <a href="#day2" data-toggle="tab" >周二</a>
+                        <a href="#day3" data-toggle="tab" >周三</a>
+                        <a href="#day4" data-toggle="tab" >周四</a>
+                        <a href="#day5" data-toggle="tab" >周五</a>
+                        <a href="#day6" data-toggle="tab" >周六</a>
+                    </div>
+                    <hr>
+                    <div class="tab-content">
+                        <div class="tab-pane fade" id="day0">
+                            <div class="row"></div>
+                        </div>
+                        <div class="tab-pane fade" id="day1">
+                            <div class="row"></div>
+                        </div>
+                        <div class="tab-pane fade" id="day2">
+                            <div class="row"></div>
+                        </div>
+                        <div class="tab-pane fade" id="day3">
+                            <div class="row"></div>
+                        </div>
+                        <div class="tab-pane fade" id="day4">
+                            <div class="row"></div>
+                        </div>
+                        <div class="tab-pane fade" id="day5">
+                            <div class="row"></div>
+                        </div>
+                        <div class="tab-pane fade" id="day6">
+                            <div class="row"></div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var time_arr = {};
+                    var today = new Array("day0","day1","day2","day3","day4","day5","day6");
+                    for(i in today){
+                        time_arr[today[i]] = [];
+                    }
+                    var data = {{ data_time|safe }};
+                    var ex = {};
+                    for(t in data){
+                        var html_sub = '';
+                        for(tt in data[t]){
+                            if(ex[data[t][tt].title]==undefined){
+                                ex[data[t][tt].title] = 1;
+                            }
+                            else{
+                                ex[data[t][tt].title] += 1;
+                            }
+                            if(ex[data[t][tt].title]==1){
+                                html_sub = '<div class="col-lg-4 col-6">' +
+                                '            <div class="card toolTip" style="overflow: visible;">\n' +
+                                '                <div class="card-body" style="padding:0">\n' +
+                                '                    <div class="mv-title"><a href="/ziYuanDetail/'+data[t][tt].id+'/0/'+data[t][tt].number+'" title="'+data[t][tt].title+'">'+data[t][tt].title+'</a>'+data[t][tt].type+'</div>\n' +
+                                '                    <div class="mv-img"><img src="'+data[t][tt].imgName+'" alt=" " class="img-fluid"></div>\n' +
+                                '                    <div class="mv-new">更新到 <span style="font-weight: bold;color:#ffffff">' + decodeUnicode(data[t][tt].num) + '</span></div>' +
+                                '                    <div class="row mv-info">\n' +
+                                '                        <span><i class="fa fa-eye" aria-hidden="true"></i>'+data[t][tt].browse+'</span>\n' +
+                                '                        <span class="mv-info-middle"><i class="fa fa-comments-o" aria-hidden="true"></i>'+data[t][tt].comment+'</span>\n' +
+                                '                        <span><i class="fa fa-heart-o" aria-hidden="true"></i></span>\n' +
+                                '                    </div>\n' +
+                                '                </div>\n' +
+                                '                <div class="toolTiptext">\n' +
+                                '                    <div style="font-size:8px;padding:5px;text-align: justify;line-height:2em;color: #333">\n' +
+                                '                        <b style="color: #fa6362;display: block;font-size: 10px">'+data[t][tt].title+'</b>\n'+data[t][tt].subtitle+
+                                '                    </div>\n' +
+                                '                </div>\n' +
+                                '            </div>' +
+                                '        </div>';
+                                $("#"+today[parseInt(t)]+" > .row").append(html_sub);
+                            }
+                        }
+                    }
+                    function decodeUnicode(str) {
+                        str = str.replace(/\\/g, "%");
+                        return unescape(str);
+                    }
+                    function getDayOfWeek(){
+                        var myDate = new Date();
+                        return today[myDate.getDay()]
+                    }
+                    $("a[href='#"+getDayOfWeek()+"']").addClass("message-modal-sel");
+                    $("#"+getDayOfWeek()).addClass("active show");
+                </script>
+                <div class="card-body">
+                    {% with time = ['周日','周一','周二','周三','周四','周五','周六'] %}
+                    {% for type in data %}
+                        <hr>
+                        <p class="width:100%"><img src="{{ url_for( 'static',filename='public/img/视频.svg') }}" style="width:1.2em;margin-right: 5px;margin-bottom: .3em;">{{ time[type|int()] }}</p>
+                        <hr>
+                        <div class="row">
+                        {% for d in data[type] %}
+                        <div class="col-lg-4 col-6">
+                            <div class="card toolTip" style="overflow: visible;">
+                                <div class="card-body" style="padding:0">
+                                    <div class="mv-title"><a href="/ziYuanDetail/{{ data[type][d].id }}/0/{{ data[type][d].number }}" title="{{ data[type][d].title|safe }}">{{ data[type][d].title|safe }}</a>{{ data[type][d].type|safe }}</div>
+                                    <div class="mv-img">
+                                        <img src="{{ data[type][d].imgName }}" alt=" " class="img-fluid">
+                                    </div>
+                                    <div class="row mv-info">
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i>{{ data[type][d].browse }}</span>
+                                        <span class="mv-info-middle"><i class="fa fa-comments-o" aria-hidden="true"></i>{{ data[type][d].comment }}</span>
+                                        <span><i class="fa fa-heart-o" aria-hidden="true"></i>{{ data[type][d].up_num }}</span>
+                                    </div>
+                                </div>
+                                <div class="toolTiptext">
+                                    <div style="font-size:8px;padding:5px;text-align: justify;line-height:2em;color: #333">
+                                        <b style="color: #fa6362;display: block;font-size: 10px">{{ data[type][d].title|safe }}</b>
+                                        {{ data[type][d].subtitle|safe }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                    {% endwith %}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card fixedsticky" style="top:67px;overflow: hidden">
+                <div class="card-body">
+                    <div class="media">
+                        <div class="media-body">
+                            <div class="media-body">
+                                <h4 class="widget-title">导航栏</h4>
+                                <div class="moKuaiSel">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-4"><a style="color:#495057" href="/lun_tan?plate_id=1&search=None&type=dong_man"><img src="/static/public/img/番剧.svg" class="icon">动漫资讯</a></div>
+                                        <div class="col-lg-4 col-4"><a style="color:#495057" href="/zi_yuan/time_tb"><img src="/static/public/img/时间表.svg" class="icon">新番时间</a></div>
+                                        <div class="col-lg-4 col-4"><a style="color:#495057" href="/zi_yuan/fen_lei"><img src="/static/public/img/分类.svg" class="icon">动漫分类</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+{% block public %}
+    <script>
+    $(document).ready(function() {
+        //为当前窗口添加滚动条滚动事件（适用于所有可滚动的元素和 window 对象（浏览器窗口））
+        $(window).scroll(function () {
+            //创建一个变量存储当前窗口下移的高度
+            var scroTop = $(window).scrollTop();
+            //判断当前窗口滚动高度
+            //如果大于100，则显示顶部元素，否则隐藏顶部元素
+            if (scroTop > 100) {
+                $('#mengka').fadeOut(250,function(){
+                    $('#this').fadeIn(250);
+                });
+
+            } else {
+                $('#this').fadeOut(250,function(){
+                    $('#mengka').fadeIn(250);
+                });
+            }
+        });
+    })
+    </script>
+{% endblock %}

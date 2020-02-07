@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3f900172-742a-4a25-baf5-7587eb4d2564" name="默认更改列表" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="web_xianggang" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="web_xianggang" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="wo_de_lun_tan" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9059ace7-f8e9-4a8b-b40f-756819179d32/console.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>data=detail,source = result,come = come</find>
+      <find>am-icon-info-circle&quot;&gt;</find>
+      <find>concat</find>
+      <find>func</find>
+      <find>err</find>
+      <find>get_ip</find>
+      <find>random</find>
+      <find>session</find>
+      <find>flash</find>
+      <find>cookin</find>
+      <find>disabled</find>
+      <find>data-toggle=&quot;tab&quot;</find>
+      <find>src</find>
+      <find>厨病激发BOY</find>
+      <find>&lt;h1&gt;</find>
+      <find>sorted_x</find>
+      <find>@@</find>
+      <find>updata</find>
+      <find>ziYuanDetail/.*?&quot;</find>
+      <find>/ziYuanDetail/[1-9]{0,}</find>
+      <find>/ziYuanDetail/[0-9]{0,}</find>
+      <find>src=&quot;.*?&quot;</find>
+      <find>href=&quot;.*?&quot;</find>
+      <find>root()</find>
+      <find>('/')</find>
+      <find>'/'</find>
+      <find>root</find>
+      <find>ziYuanDetail</find>
+      <find>Modal</find>
+      <find>foo</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/TT/55cc/55cc.js" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/Python/lib/python3.7/socketserver.py" />
+        <option value="$PROJECT_DIR$/py/mv_jie_xi.py" />
+        <option value="$PROJECT_DIR$/TT/img_yhdm.py" />
+        <option value="$PROJECT_DIR$/TT/fc236/fc236.py" />
+        <option value="$PROJECT_DIR$/config.ini" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/web/wo_de_lun_tan/config.ini" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/nginx/conf/nginx.conf" />
+        <option value="$PROJECT_DIR$/templates/zi_yuan/detail.html" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/web/source_web_TT/run_new.py" />
+        <option value="$PROJECT_DIR$/templates/mv/iframe.html" />
+        <option value="$PROJECT_DIR$/static/public/jigsaw/jigsaw.min.js" />
+        <option value="$PROJECT_DIR$/static/css/dao_hang_lan.css" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/web/wo_de_lun_tan/templates/zi_yuan/search_sourch.html" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/web/wo_de_lun_tan/static/css/dao_hang_lan.css" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/web/wo_de_lun_tan/templates/zhu_ce.html" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/web/wo_de_lun_tan/templates/deng_lu.html" />
+        <option value="$PROJECT_DIR$/templates/deng_lu.html" />
+        <option value="$PROJECT_DIR$/templates/zhu_ce.html" />
+        <option value="$PROJECT_DIR$/templates/zi_yuan/search_sourch.html" />
+        <option value="$PROJECT_DIR$/templates/lun_tan/detail.html" />
+        <option value="$PROJECT_DIR$/templates/lun_tan/main.html" />
+        <option value="$PROJECT_DIR$/TT/run_dilidili.py" />
+        <option value="$PROJECT_DIR$/static/js/divFen.js" />
+        <option value="$PROJECT_DIR$/templates/mv/deplayer.html" />
+        <option value="$PROJECT_DIR$/py/mysql_conn.py" />
+        <option value="$PROJECT_DIR$/TT/qqdm/run1.py" />
+        <option value="$PROJECT_DIR$/TT/55cc/55cc.py" />
+        <option value="$PROJECT_DIR$/TT/ts.html" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/web/source_web_TT/time.py" />
+        <option value="$PROJECT_DIR$/TT/run_new.py" />
+        <option value="$USER_HOME$/文档/sx/重叠排序/run.py" />
+        <option value="$USER_HOME$/文档/sx/矩阵/ggplot.py" />
+        <option value="$PROJECT_DIR$/static/css/style.css" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/templates/public.html" />
+        <option value="$PROJECT_DIR$/templates/root.html" />
+        <option value="$PROJECT_DIR$/py/sql.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell_2" />
+        <option value="$PROJECT_DIR$/TT/time.py" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/web/wo_de_lun_tan/static/css/style.css" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/web/wo_de_lun_tan/templates/zi_yuan/detail.html" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/web/wo_de_lun_tan/templates/zi_yuan/zi_yuan.html" />
+        <option value="$PROJECT_DIR$/templates/zi_yuan/zi_yuan.html" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/web/wo_de_lun_tan/static/public/clipboard/clipboard.min.js" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/web/wo_de_lun_tan/app.py" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/web/wo_de_lun_tan/templates/public.html" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/web/wo_de_lun_tan/templates/zi_yuan/zi_yuan_detail.html" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/web/source_web_TT/dmzj/run.py" />
+        <option value="&lt;cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2&gt;/install/web/wo_de_lun_tan/py/mysql_conn.py" />
+        <option value="&lt;3ae33182-8f7b-4a9c-a721-3661a755ce87&gt;/install/web/source_web_TT/time.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="28" />
+    <option name="width" value="960" />
+    <option name="height" value="1018" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <showMembers ProjectPane="false" />
+      <autoscrollToSource ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb&#10;redshift&#10;mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="database.console.AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="grid.search.filter.rows" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/wo_de_lun_tan/wordpress_20191120-1.sql" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TT/55cc" />
+      <recent name="$PROJECT_DIR$/ymdm" />
+      <recent name="$PROJECT_DIR$/templates/zi_yuan" />
+      <recent name="$PROJECT_DIR$/static/public/img" />
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static_1/js" />
+      <recent name="$PROJECT_DIR$/static/public/img/plate" />
+      <recent name="$PROJECT_DIR$/static/public" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.time">
+    <configuration name="55cc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="wo_de_lun_tan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TT/55cc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TT/55cc/55cc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="wo_de_lun_tan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/文档/sx/重叠排序" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/文档/sx/重叠排序/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="wo_de_lun_tan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TT/qqdm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TT/qqdm/run1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="time" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="wo_de_lun_tan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TT" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TT/time.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="wo_de_lun_tan" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="wo_de_lun_tan" type="Python.FlaskServer" singleton="false">
+      <module name="wo_de_lun_tan" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.time" />
+        <item itemvalue="Flask server.Flask (app.py)" />
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python.55cc" />
+        <item itemvalue="Python.run1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SQLScriptSettings">
+    <option name="matrix">
+      <map>
+        <entry key="MYSQL.CreateDefinition" value="IgnoreDefiner=1, CreateOrReplace=1" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f900172-742a-4a25-baf5-7587eb4d2564" name="默认更改列表" comment="" />
+      <created>1562131923265</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562131923265</updated>
+      <workItem from="1562131924575" duration="38807000" />
+      <workItem from="1562313638021" duration="4917000" />
+      <workItem from="1562318588034" duration="7695000" />
+      <workItem from="1562331797302" duration="13996000" />
+      <workItem from="1562383868495" duration="34775000" />
+      <workItem from="1562465407326" duration="3595000" />
+      <workItem from="1562469036984" duration="15384000" />
+      <workItem from="1563808384696" duration="287000" />
+      <workItem from="1564136874054" duration="623000" />
+      <workItem from="1564196549506" duration="28000" />
+      <workItem from="1564994218744" duration="8113000" />
+      <workItem from="1565069807122" duration="1832000" />
+      <workItem from="1565071689873" duration="7828000" />
+      <workItem from="1565085950737" duration="75021000" />
+      <workItem from="1565230507412" duration="1433000" />
+      <workItem from="1565247449161" duration="12206000" />
+      <workItem from="1565266762041" duration="55910000" />
+      <workItem from="1565395084016" duration="86612000" />
+      <workItem from="1565517801368" duration="246000" />
+      <workItem from="1565518582787" duration="22152000" />
+      <workItem from="1565611574571" duration="41150000" />
+      <workItem from="1565699075220" duration="30869000" />
+      <workItem from="1565776258966" duration="6409000" />
+      <workItem from="1565846056916" duration="14526000" />
+      <workItem from="1565884534394" duration="53384000" />
+      <workItem from="1566103331608" duration="531000" />
+      <workItem from="1566121929255" duration="102000" />
+      <workItem from="1566133985604" duration="46253000" />
+      <workItem from="1566343362592" duration="9343000" />
+      <workItem from="1566361861550" duration="702000" />
+      <workItem from="1566378626810" duration="4148000" />
+      <workItem from="1566458011802" duration="3278000" />
+      <workItem from="1566515592820" duration="4256000" />
+      <workItem from="1566649284051" duration="9595000" />
+      <workItem from="1566692085244" duration="46508000" />
+      <workItem from="1566772715592" duration="31496000" />
+      <workItem from="1566834027219" duration="3200000" />
+      <workItem from="1566877907617" duration="4847000" />
+      <workItem from="1566890816609" duration="33029000" />
+      <workItem from="1566950057404" duration="31700000" />
+      <workItem from="1567002886216" duration="6210000" />
+      <workItem from="1567035429976" duration="8675000" />
+      <workItem from="1567050921868" duration="4462000" />
+      <workItem from="1567080578748" duration="3304000" />
+      <workItem from="1567090012512" duration="1047000" />
+      <workItem from="1567138648138" duration="36563000" />
+      <workItem from="1567209893692" duration="99343000" />
+      <workItem from="1567379981625" duration="3816000" />
+      <workItem from="1567397139224" duration="32536000" />
+      <workItem from="1567441113752" duration="116000" />
+      <workItem from="1567441253372" duration="935000" />
+      <workItem from="1567467816391" duration="26179000" />
+      <workItem from="1567560139950" duration="7103000" />
+      <workItem from="1567591671886" duration="11527000" />
+      <workItem from="1567604578575" duration="11311000" />
+      <workItem from="1567674302699" duration="1973000" />
+      <workItem from="1567654361713" duration="9306000" />
+      <workItem from="1567664851090" duration="2779000" />
+      <workItem from="1567677802127" duration="14305000" />
+      <workItem from="1567772649941" duration="14781000" />
+      <workItem from="1567812792831" duration="27123000" />
+      <workItem from="1567844498929" duration="15544000" />
+      <workItem from="1567906115881" duration="43477000" />
+      <workItem from="1567956916699" duration="4301000" />
+      <workItem from="1567986291373" duration="1724000" />
+      <workItem from="1568003491063" duration="7558000" />
+      <workItem from="1568089285457" duration="20115000" />
+      <workItem from="1568127399592" duration="8365000" />
+      <workItem from="1568161857318" duration="13416000" />
+      <workItem from="1568191136530" duration="6673000" />
+      <workItem from="1568265899064" duration="619000" />
+      <workItem from="1568549053136" duration="11462000" />
+      <workItem from="1568815812293" duration="278000" />
+      <workItem from="1568854529175" duration="2492000" />
+      <workItem from="1568860783472" duration="5253000" />
+      <workItem from="1568868265682" duration="7152000" />
+      <workItem from="1568891095104" duration="16593000" />
+      <workItem from="1568956285566" duration="1220000" />
+      <workItem from="1569064094286" duration="45944000" />
+      <workItem from="1569165592148" duration="3379000" />
+      <workItem from="1569208345040" duration="30267000" />
+      <workItem from="1569297136704" duration="18330000" />
+      <workItem from="1569339152893" duration="29241000" />
+      <workItem from="1569471782266" duration="6399000" />
+      <workItem from="1569511348699" duration="4076000" />
+      <workItem from="1569576195271" duration="34186000" />
+      <workItem from="1569753677767" duration="19301000" />
+      <workItem from="1569816716779" duration="2667000" />
+      <workItem from="1569844274810" duration="15256000" />
+      <workItem from="1569902798243" duration="43829000" />
+      <workItem from="1569981303120" duration="43213000" />
+      <workItem from="1570067666530" duration="30533000" />
+      <workItem from="1570147473322" duration="39452000" />
+      <workItem from="1570200502293" duration="48415000" />
+      <workItem from="1570328619049" duration="6533000" />
+      <workItem from="1570338955119" duration="1101000" />
+      <workItem from="1570380619548" duration="3563000" />
+      <workItem from="1570442300996" duration="22086000" />
+      <workItem from="1570536215754" duration="731000" />
+      <workItem from="1570594904830" duration="5496000" />
+      <workItem from="1570603834000" duration="1607000" />
+      <workItem from="1570635984678" duration="4262000" />
+      <workItem from="1570718812335" duration="21442000" />
+      <workItem from="1570891028202" duration="6170000" />
+      <workItem from="1570933597875" duration="9118000" />
+      <workItem from="1570978571086" duration="888000" />
+      <workItem from="1571112870480" duration="4000" />
+      <workItem from="1571113049412" duration="29000" />
+      <workItem from="1571113434387" duration="23916000" />
+      <workItem from="1571149641678" duration="2434000" />
+      <workItem from="1571227687640" duration="8903000" />
+      <workItem from="1571310823921" duration="8755000" />
+      <workItem from="1571321583471" duration="2933000" />
+      <workItem from="1571373456181" duration="6509000" />
+      <workItem from="1571416728660" duration="220000" />
+      <workItem from="1571449907836" duration="5676000" />
+      <workItem from="1571466903091" duration="1859000" />
+      <workItem from="1571642446912" duration="11189000" />
+      <workItem from="1571750086964" duration="6292000" />
+      <workItem from="1572103921038" duration="1793000" />
+      <workItem from="1572272693861" duration="1300000" />
+      <workItem from="1573188541673" duration="9828000" />
+      <workItem from="1573354660066" duration="4102000" />
+      <workItem from="1574243540300" duration="5545000" />
+      <workItem from="1574429837350" duration="84000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1855295000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49816176" visible="true" weight="0.26631016" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24973261" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946523" weight="0.32992035" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Favorites" order="5" sideWeight="0.5018382" weight="0.18885097" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49679145" weight="0.3811149" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32992035" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5026738" side_tool="true" weight="0.42207053" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.92406416" visible="true" weight="0.3447099" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.29920363" />
+      <window_info anchor="bottom" id="Python Console" order="13" sideWeight="0.4983957" weight="0.21274175" />
+      <window_info anchor="bottom" id="调试" order="14" sideWeight="0.49679145" weight="0.46643913" />
+      <window_info anchor="bottom" id="SQL Generator" order="15" weight="0.3287827" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="16" weight="0.32992035" />
+      <window_info anchor="bottom" id="File Transfer" order="17" sideWeight="0.4973262" visible="true" weight="0.24914676" />
+      <window_info anchor="bottom" id="Database Changes" order="18" weight="0.32992035" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24973261" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32994652" />
+      <window_info anchor="right" id="Database" order="4" sideWeight="0.49848023" weight="0.21283422" />
+      <window_info anchor="right" x="0" y="0" width="430" height="818" id="文档" order="5" sideWeight="0.50151974" side_tool="true" weight="0.23956044" />
+      <window_info anchor="right" id="Remote Host" order="6" sideWeight="0.49924812" visible="true" weight="0.20588236" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49816176" visible="true" weight="0.19786096" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24973261" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946523" weight="0.32992035" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Favorites" order="5" sideWeight="0.5018382" weight="0.18885097" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49679145" visible="true" weight="0.3811149" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32992035" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5026738" side_tool="true" weight="0.42207053" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.92406416" weight="0.34357223" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.29920363" />
+      <window_info anchor="bottom" id="Python Console" order="13" sideWeight="0.4983957" weight="0.25142208" />
+      <window_info anchor="bottom" id="调试" order="14" sideWeight="0.49679145" weight="0.46075085" />
+      <window_info anchor="bottom" id="SQL Generator" order="15" weight="0.3287827" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="16" weight="0.32992035" />
+      <window_info anchor="bottom" id="File Transfer" order="17" sideWeight="0.4973262" weight="0.24914676" />
+      <window_info anchor="bottom" id="Database Changes" order="18" weight="0.32992035" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24973261" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32994652" />
+      <window_info anchor="right" id="Database" order="4" sideWeight="0.49848023" visible="true" weight="0.29572192" />
+      <window_info anchor="right" x="0" y="0" width="430" height="818" id="文档" order="5" sideWeight="0.50151974" side_tool="true" weight="0.23956044" />
+      <window_info anchor="right" id="Remote Host" order="6" sideWeight="0.49924812" weight="0.29144385" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ymdm/source_web_TT.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/PycharmProjects/source_web_TT/run_new.py</url>
+          <line>109</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/py/sql.py</url>
+          <line>811</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/up_ip.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app.py</url>
+          <line>74</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TT/time/dilidili.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TT/qqdm/run1.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TT/fc236/fc236.py</url>
+          <line>101</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TT/run_new.py</url>
+          <line>104</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TT/run_dilidili.py</url>
+          <line>89</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TT/55cc/55cc.py</url>
+          <line>102</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/wo_de_lun_tan$fire_selenium.coverage" NAME="fire_selenium Coverage Results" MODIFIED="1567820822269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/wo_de_lun_tan$dilidili.coverage" NAME="dilidili Coverage Results" MODIFIED="1570158251562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TT/time" />
+    <SUITE FILE_PATH="coverage/wo_de_lun_tan$time.coverage" NAME="time Coverage Results" MODIFIED="1572322010101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TT" />
+    <SUITE FILE_PATH="coverage/wo_de_lun_tan$run1.coverage" NAME="run1 Coverage Results" MODIFIED="1570939550541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TT/qqdm" />
+    <SUITE FILE_PATH="coverage/wo_de_lun_tan$wo_de_lun_tan.coverage" NAME="wo_de_lun_tan Coverage Results" MODIFIED="1567332188634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/wo_de_lun_tan$run_new.coverage" NAME="run_new Coverage Results" MODIFIED="1570810167311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TT" />
+    <SUITE FILE_PATH="coverage/wo_de_lun_tan$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1571757561480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/wo_de_lun_tan$run_dilidili.coverage" NAME="run_dilidili Coverage Results" MODIFIED="1570809643838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TT" />
+    <SUITE FILE_PATH="coverage/wo_de_lun_tan$fire_selenium__1_.coverage" NAME="fire_selenium (1) Coverage Results" MODIFIED="1567820934473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/" />
+    <SUITE FILE_PATH="coverage/wo_de_lun_tan$run.coverage" NAME="run Coverage Results" MODIFIED="1571322206954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/文档/sx/重叠排序" />
+    <SUITE FILE_PATH="coverage/wo_de_lun_tan$up_ip.coverage" NAME="up_ip Coverage Results" MODIFIED="1569252195217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/wo_de_lun_tan$fc236.coverage" NAME="fc236 Coverage Results" MODIFIED="1570246245891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TT/fc236" />
+    <SUITE FILE_PATH="coverage/wo_de_lun_tan$ju_zheng.coverage" NAME="ju_zheng Coverage Results" MODIFIED="1569753800792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/data/public/ts_py" />
+    <SUITE FILE_PATH="coverage/wo_de_lun_tan$55cc.coverage" NAME="55cc Coverage Results" MODIFIED="1571232380083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TT/55cc" />
+    <SUITE FILE_PATH="coverage/wo_de_lun_tan$img_yhdm.coverage" NAME="img_yhdm Coverage Results" MODIFIED="1570239053323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TT" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointLogExpression">
+      <expression>
+        <expression-string>alert(1);
+});</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="das://53e6a387-e1e6-4882-bc6a-b73e8c7fbf96/schema/web/table/message_leaving">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="f5565685-e05a-48a0-9091-26977e844ecd">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://53e6a387-e1e6-4882-bc6a-b73e8c7fbf96/schema/web/table/message_response">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="f5565685-e05a-48a0-9091-26977e844ecd">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/deng_lu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3078">
+          <caret line="171" column="159" selection-start-line="171" selection-start-column="24" selection-end-line="171" selection-end-column="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/zhu_ce.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3096">
+          <caret line="172" column="159" selection-start-line="172" selection-start-column="159" selection-end-line="172" selection-end-column="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/53e6a387-e1e6-4882-bc6a-b73e8c7fbf96/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2123" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lun_tan/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="90" column="36" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lun_tan/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="432" column="5" selection-start-line="432" selection-start-column="5" selection-end-line="432" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TT/run_dilidili.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="84" column="19" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://53e6a387-e1e6-4882-bc6a-b73e8c7fbf96/schema/source_web_TT/table/source_dilidili">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="53d1598b-557f-4e94-8fbd-71155cb9974a">
+          <filtering>
+            <filter text="title like '%浦岛坂田船的日常%'" />
+            <filter text="title like '%篮球少年王%'" />
+            <filter text="title like '%迷你百合%'" />
+            <filter text="title like '%无限之住人-IMMORTAL-%'" />
+            <filter text="title like '%NULL%'" />
+            <filter text="title like '%NULL&amp;PETA%'" />
+            <filter text="title like '%厨病激发BOY%'" />
+            <filter text="title like '%石纪%'" />
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/divFen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="150" column="45" selection-start-line="150" selection-start-column="45" selection-end-line="150" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/public/live2d/run_local.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/zi_yuan/search_sourch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="314" column="47" selection-start-line="314" selection-start-column="47" selection-end-line="314" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://53e6a387-e1e6-4882-bc6a-b73e8c7fbf96/schema/web/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="b29b95f7-4a27-4726-91eb-08d3969c6b71">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://53e6a387-e1e6-4882-bc6a-b73e8c7fbf96/schema/source_web_TT/table/source">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="b29b95f7-4a27-4726-91eb-08d3969c6b71">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/zi_yuan/zi_yuan_detail.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py/mv_jie_xi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="58" column="34" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mv/deplayer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://53e6a387-e1e6-4882-bc6a-b73e8c7fbf96/schema/source_web_TT/table/source_qqdm">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="b1a6f720-d792-4cfa-934a-6c5ce3f8e97e">
+          <filtering />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TT/qqdm/run1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://53e6a387-e1e6-4882-bc6a-b73e8c7fbf96/schema/web/table/source_love">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="b1a6f720-d792-4cfa-934a-6c5ce3f8e97e">
+          <filtering />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="1757" selection-start-line="1757" selection-end-line="1757" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1189602913/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="3674" column="34" selection-start-line="3674" selection-start-column="28" selection-end-line="3674" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Python/lib/python3.7/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="334" selection-start-line="334" selection-end-line="334" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Python/lib/python3.7/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="311" selection-start-line="311" selection-end-line="311" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Python/lib/python3.7/_bootlocale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/文档/sx/2/ju_zheng.py" />
+    <entry file="file://$PROJECT_DIR$/TT/source_insert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-226">
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TT/55cc/55cc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="89" selection-start-line="89" selection-end-line="89" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TT/run_new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="28" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TT/ts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="987" selection-end-column="987" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/文档/sx/重叠排序/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py/py/mysql_conn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ymdm/time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1846">
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://70312f92-b739-4cf4-93be-cb164b89a488/schema/web/table/source">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="95dbcc8d-112d-4627-9e85-040688bea5d8">
+          <filtering />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/文档/sx/矩阵/ggplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://80aebf8b-db83-4131-b191-053974231b42/schema/crcdb/table/sample_id">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="95dbcc8d-112d-4627-9e85-040688bea5d8">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TT/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18054">
+          <caret line="1003" column="23" selection-start-line="1003" selection-start-column="23" selection-end-line="1003" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/public.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2160">
+          <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://53e6a387-e1e6-4882-bc6a-b73e8c7fbf96/schema/web/table/source">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="a8172cbb-a3e2-461a-a843-97c09b00d555">
+          <filtering>
+            <filter text="path0 like &quot;%youku%&quot;" />
+            <filter text="path0 like &quot;%youku%&quot; or path0 like &quot;m3u8%&quot; or path0 like &quot;%flv%&quot;" />
+            <filter text="path3 like &quot;m3u8%&quot; or path3 like &quot;%flv%&quot;" />
+            <filter text="path3 like &quot;%youku%&quot; or path3 like &quot;m3u8%&quot; or path3 like &quot;%flv%&quot;" />
+            <filter text="path0 like &quot;%yoku%&quot;" />
+            <filter text="path0 like &quot;%yuku%&quot;" />
+            <filter text="path0 like &quot;%youku%&quot; or path0 like &quot;m3u8%&quot; or path0 like &quot;%flv%&quot; or path0 like &quot;%qiyi%&quot;" />
+            <filter text="path0 like &quot;%youku%&quot; or path0 like &quot;m3u8%&quot; or path0 like &quot;%flv%&quot; or path0 like &quot;%iqiyi%&quot;" />
+            <filter text="path0 like &quot;%youku%&quot; or path0 like &quot;m3u8%&quot; or path0 like &quot;%flv%&quot; or path0 like &quot;%bilibili%&quot;" />
+            <filter text="path1 like &quot;%mp4%&quot; or path1 like &quot;m3u8%&quot; or path1 like &quot;%flv%&quot;" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/root.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9486">
+          <caret line="527" column="8" selection-start-line="527" selection-start-column="8" selection-end-line="534" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17226">
+          <caret line="968" column="83" selection-start-line="968" selection-start-column="83" selection-end-line="968" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TT/time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="121" column="46" selection-start-line="121" selection-start-column="46" selection-end-line="121" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py/mysql_conn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="120" selection-start-line="7" selection-start-column="120" selection-end-line="7" selection-end-column="120" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/zi_yuan/zi_yuan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378">
+          <caret line="99" column="30" lean-forward="true" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py/sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="893" column="99" selection-start-line="893" selection-start-column="99" selection-end-line="893" selection-end-column="99" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9059ace7-f8e9-4a8b-b40f-756819179d32/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

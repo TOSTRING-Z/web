@@ -1,0 +1,546 @@
+{% extends "public.html" %}
+{% block title %}
+    {{ sourse.title }}
+{% endblock %}
+{% block zi_yuan %}{{ 'active' }}{% endblock %}
+{% block zi_yuan_search %}
+<input type="text" name="zi_yuan_search_type" value="source" style="display: none">
+{% endblock %}
+{% block brand %}<a id="this" style="width:230px;text-overflow:ellipsis;color:#495057;display: none;font-size: 20px;overflow:hidden;white-space: nowrap"><img src="{{ url_for( 'static',filename='public/img/视频.svg') }}" style="width:1.2em;margin-right: 5px;margin-bottom: .3em;">{{ sourse.title }}</a>{% endblock %}
+{% block container %}
+    <link href="https://www.moerats.com/usr/dplayer/DPlayer.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for( 'static',filename='public/OwO/OwO.min.css') }}">
+    <style>
+     .dplayer-controller, .dplayer-controller-mask,
+     .dplayer-video-wrap,
+     .dplayer-video-wrap .dplayer-video{
+        #border-radius: 17px;
+    }
+    .dplayer {
+        width: 100%;
+        #border-radius: 20px;
+        border: 3px solid;
+        border-color:  #31b0d5 #fa6362 #d58512 #4cae4c;
+        overflow: hidden;
+    }
+    .note-editor.note-frame {
+        border: 1px solid #f0f0f0;
+        #border-radius: 0 0 3px 3px;
+    }
+   .lv-2 {
+        color:#ffffff;
+        font-weight: bold;
+        font-size: 14px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        position: absolute;
+        bottom: 0;
+        left:15px;
+        padding: 0 2px;
+    }
+   @media (max-width: 990px) {
+       .lv-2 {
+           left:13px;
+       }
+   }
+    .lv-1 {
+        color:#ffffff;
+        font-weight: bold;
+        font-size: 10px;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        position: absolute;
+        bottom: 0;
+        padding: 0 2px;
+    }
+    .lv {
+        display: inline-block;
+        position: relative;
+        bottom: 4px;
+        left: 5px;
+        width: 40px;
+        vertical-align: bottom;
+    }
+    .btn-num {
+        padding: 5px 10px;
+        color: #ffffff;
+        opacity: 0.9;
+        font-size: 14px;
+        width: 50px;
+        background-color: orange;
+        box-shadow: 0 1px 3px rgba(26,26,26,.1);
+        border-radius: 10px;
+        line-height: 5px;
+        margin: 3px 5px;
+        display: inline-block;
+        text-align: center;
+        border:3px solid #fdd9d9;
+    }
+    .btn-num:hover, .btn-num-sel {
+        color: #ffffff;
+        background-color: #d58512;
+    }
+    .fa-heart {
+        color: #fa6362;
+    }
+    .user-operate {
+        font-size: larger;
+        cursor: pointer;
+    }
+    .img-share {
+        width: 2em;
+    }
+    .btn-share {
+        display: inline-block;
+    }
+    .dropdown{
+        display: inline-block;
+    }
+    .tag {
+        color: #7f7d7c;
+    }
+    .tag span{
+        position: relative;
+        bottom: 0;
+        box-shadow: 0 0 3px #333;
+        margin: .1em;
+        display: inline-block;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 15px;
+        padding: 5px 8px;
+        border-radius: 5px;
+        background-color: #6fa3ef;
+        margin-right: 5px;
+    }
+    .subtitle {
+        line-height: 1.5;
+        color: #7f7d7c;
+        text-align: justify;
+        letter-spacing:2px;
+    }
+        .mv {
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+
+    }
+    .mv-img {
+        opacity: 1;
+        position: relative;
+        height: 8em;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+    }
+    .mv-info {
+        margin: 5px 0;
+        width: 100%;
+        position: relative;
+    }
+    .mv-info span:first-child{
+        margin-left: 15px;
+    }
+    .mv-info span:last-child{
+        margin-right: 25px;
+     }
+    .mv-info-middle {
+        margin: 0 auto;
+    }
+    .mv-info span {
+        font-weight: normal;
+        font-size: 10px;
+    }
+    .mv-info span i {
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    .mv-title {
+        font-size: 12px;
+        line-height: 1.5;
+        background-color: black;
+        opacity:0.7;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1400;
+        color:#ffffff;
+        padding:3px;
+        white-space : normal;
+    }
+    .mv-title span{
+        position: relative;
+        bottom: 0;
+        box-shadow: 0 0 3px #333;
+        margin: .1em;
+        display: inline-block;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 12px;
+        padding: 0 5px;
+        border-radius: 4px;
+        background-color: #6fa3ef;
+    }
+    .mv-subtitle {
+        font-size: small;
+        line-height: 1.3;
+    }
+    p {
+        color:#7f7d7c;
+    }
+    @media (min-width: 991px) {
+        .nobr {
+            max-height: 420px;
+            overflow: hidden;
+            overflow-y: visible;
+            padding:5px;
+        }
+    }
+    @media (max-width: 990px) {
+        .nobr {
+            overflow: hidden;
+            overflow-x: visible;
+            white-space: nowrap;
+            margin: 0 -15px;
+            vertical-align: bottom;
+        }
+        .nobr .card{
+            display: inline-block;
+            width: 15em;
+            margin: 5px;
+        }
+        .nobr .card-body {
+            position: relative;
+            top: 0;
+        }
+    }
+    </style>
+    <div class="row">
+        <div class="col-lg-12">
+             <div class="card">
+                <div class="card-header">
+                    <h4><img src="{{ url_for( 'static',filename='public/img/视频.svg') }}" style="width:1.2em;margin-right: 5px;margin-bottom: .3em;">{{ sourse.title }}</h4>
+                </div>
+                 <div class="card-body">
+                     <div id="dplayer"></div>
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="card">
+                <div class="card-header" style="overflow: visible">
+                    <button type="button" class="btn btn-primary btn-share" data-toggle="collapse" data-target="#demo_num" id="number">选集</button>
+                    <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle btn-share" data-toggle="dropdown">
+                    分流 {{ come }}
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/ziYuanDetail/{{ sourse.id }}/0/0">分流 0</a>
+                        <a class="dropdown-item" href="/ziYuanDetail/{{ sourse.id }}/1/0">分流 1</a>
+                        <a class="dropdown-item" href="/ziYuanDetail/{{ sourse.id }}/2/0">分流 2</a>
+                    </div>
+                    </div>
+                    <div class="pull-right">
+                        分享到:
+                        <a target="_blank" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://106.53.77.53/ziYuanDetail/{{ sourse.id }}/{{ come }}/{{ num }}&amp;title={{ sourse.title }}&amp;&summary={{ sourse.subtitle }}&amp;site=http://106.53.77.53/static/public/img/user/{{ session.get('user_id') }}"><img
+                                src="{{ url_for( 'static',filename='public/img/QQ.svg') }}" alt="QQ" class="img-share"></a>
+                    </div>
+                  <div id="demo_num" class="collapse">
+                      <hr>
+                      <div id="num"></div>
+                      <hr>
+                  </div>
+                </div>
+                <div class="card-body">
+                    <div class="tag">标签 / {{ sourse.type|safe }}</div>
+                    <hr>
+                    <div class="subtitle">{{ sourse.subtitle }}</div>
+                    <hr>
+                </div>
+                <div class="card-body">
+                    <table class="table" id="table_detail" style="width:100%">
+                        <thead style="display: none">
+                          <tr>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <ul class="pagination" id="table_detail_ul"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card fixedsticky" style="top:67px">
+                <div class="card-body">
+                    <div class="media">
+                        <span class="user-operate">
+                            {% if sourse.id in source_love %}
+                            <i id="sourceLove" data-source_id="{{ sourse.id }}" class="fa fa-heart"></i>
+                            {% else %}
+                            <i id="sourceLove" data-source_id="{{ sourse.id }}" class="fa fa-heart-o"></i>
+                            {% endif %}
+                            喜欢
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card fixedsticky" style="top:135px;overflow: visible">
+                <div class="card-body">
+                    <div class="media">
+                        <div class="media-body">
+                            <form action="/owoSubmit/{{ sourse.id }}/{{ come }}/{{ num }}" method="post">
+                                <textarea contenteditable='true' name="content" class="OwO-textarea form-control"></textarea>
+                                <div class="OwO"></div>
+                                <button class="OwO-button btn btn-primary pull-right" type="submit">发送</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card fixedsticky" style="top:275px;">
+                <div class="card-body">
+                    <p>番剧推荐</p>
+                    <hr>
+                    <div class="nobr">
+                        {% for d in source_recommend %}
+                            <div class="card" style="overflow: visible;">
+                                <div class="card-body" style="padding:0">
+                                    <div class="mv-title">{{ source_recommend[d].title }}{{ source_recommend[d].type|safe }}</div>
+                                    <a class="mv-img" href="/ziYuanDetail/{{ source_recommend[d].id }}/0/0">
+                                        <img src="{{ source_recommend[d].imgName }}" alt=" " class="img-fluid">
+                                    </a>
+                                    <div class="row mv-info">
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i>{{ source_recommend[d].browse }}</span>
+                                        <span class="mv-info-middle"><i class="fa fa-comments-o" aria-hidden="true"></i>{{ source_recommend[d].comment }}</span>
+                                        <span><i class="fa fa-heart-o" aria-hidden="true"></i>{{ source_recommend[d].up_num }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <form method="post" action="/source_conmment_response">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">评论</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="form-group">
+                <input type="text" style="display: none" class="form-control" id="detail_id" name="detail_id">
+                <input type="text" style="display: none" class="form-control" id="target_source_id" name="target_source_id">
+                <input type="text" style="display: none" class="form-control" id="user_id" name="user_id">
+              </div>
+              <div class="form-group">
+                <textarea type="text" class="form-control" oninput="check(this)" required id="source_conmment_content" name="content"></textarea>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" onclick="return check_all()" class="btn btn-primary">发送</button>
+          </div>
+        </form>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sourceLoveModal" tabindex="-1" role="dialog" aria-labelledby="sourceLoveModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-body">
+        成功!
+        </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block public %}
+    <script src="{{ url_for( 'static',filename='js/datatable.js') }}"></script>
+    <!-- 初始化表格 -->
+    <script type="text/javascript">
+        var table_detail = new table("table_detail",{{ data|safe }});
+        table_detail;
+    </script>
+    <!-- 初始化表格结束 -->
+<!--    <script src="https://www.moerats.com/usr/dplayer/DPlayer.min.js"></script>-->
+    <script src="https://cdnjs.loli.net/ajax/libs/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<!--    <script src="https://cdn.bootcss.com/hls.js/8.0.0-beta.3/hls.js"></script>-->
+
+<link href="//cdn.staticfile.org/dplayer/1.25.0/DPlayer.min.css" rel="stylesheet">
+<script src="//cdn.staticfile.org/dplayer/1.25.0/DPlayer.min.js"></script>
+<script src="//cdn.staticfile.org/hls.js/0.10.1/hls.min.js"></script>
+    <script>
+    $("#sourceLove").click(function (e) {
+        var source_id = $(e.currentTarget).data("source_id");
+        $.ajax({
+            url:"/sourceLove/"+source_id,
+            beforeSend:function(){
+              $("#loading").removeClass("hide");
+            },
+            complete:function () {
+                $("#loading").addClass("hide");
+            },
+            success: function (d) {
+                if(d == "success")
+                    $("#sourceLove").attr("class","fa fa-heart");
+                else
+                    $("#sourceLove").attr("class","fa fa-heart-o");
+            },
+            error:function () {
+                $("#sourceLoveModal").modal("show");
+                $(".modal-backdrop").removeAttr("class");
+                $("#sourceLoveModal .modal-body").html("提交失败!")
+            }
+        })
+    });
+    function check(e){
+        if (e.value == "")
+        e.setCustomValidity("请输入内容!");
+        else
+        e.setCustomValidity("");
+    }
+    function check_all(){
+        var content = document.getElementById("source_conmment_content");
+        content.setCustomValidity("");
+        if (content.checkValidity() == false||content.value == "")
+        content.setCustomValidity("请输入内容!");
+        else
+        content.setCustomValidity("");
+    }
+    function modalData(e){
+        setTimeout(function () {
+            document.getElementById("source_conmment_content").setCustomValidity("请输入内容!");
+            $("#detail_id").attr("value",$(e).data("detail_id"));
+            $("#target_source_id").attr("value",$(e).data("target_source_id"));
+            $("#user_id").attr("value",$(e).data("user_id"));
+        }, 300);
+    }
+
+    var url_arr='{{ sourse.path }}'.split(',');
+    var t = [];
+    var ad = 0;
+    var demo_num = 0;
+    for(i in url_arr){
+        var it = i.toInt32() + 1 - ad;
+        if(url_arr[i].split('|').length > 1){
+        it = url_arr[i].split('|')[1];
+            if(it == "pv"){
+                ad = 1;
+                number = 'pv1';
+            }
+            if(it == "pv2"){
+                ad = 2;
+                number = 'pv2';
+            }
+            if(it == "pv3"){
+                ad = 3;
+                number = 'pv3';
+            }
+        }
+        $("<a>",{
+            class:"btn-num"+(i=={{ num }}?" btn-num-sel":""),
+            href:"/ziYuanDetail/{{ sourse.id }}/{{ come }}/"+i,
+            text:it
+        }).appendTo("#num");
+    }
+    var url=url_arr[{{ num }}].split('|')[0];    //这里填写视频地址
+    var id=md5(url);
+    const dp = new DPlayer({
+        container: document.getElementById('dplayer'),
+        video: {
+            url: url,
+            lang: 'zh-cn',
+            pic: '/static/public/img/upload.gif',
+            thumbnails: '/static/public/img/upload.gif'
+      },
+      danmaku: {
+            id: id,
+            api: 'http://106.53.77.53:1206/'    //这里填写弹幕地址
+        }
+    });
+    </script>
+    <script src="{{ url_for( 'static',filename='public/OwO/OwO.min.js') }}"></script>
+	<script>
+	    var OwO_demo = new OwO({
+	        logo: 'OωO',
+	        container: document.getElementsByClassName('OwO')[0],
+	        target: document.getElementsByClassName('OwO-textarea')[0],
+	        api: '{{ url_for( 'static',filename='public/OwO/OwO.json') }}',
+	        position: 'down',
+	        wwidth: '240px',
+	        maxHeight: '250px'
+	    });
+	</script>
+    <script>
+    function close_comment(detail_id) {
+        $("#slide"+detail_id).slideToggle();
+        $("#slide"+detail_id).html("");
+    }
+    function comment(e) {
+        var detail_id = $(e).data("detail_id");
+        $.ajax({
+            url:"/source_comment/"+detail_id,
+            beforeSend:function(){
+              $("#loading").removeClass("hide");
+            },
+            dataType:"JSON",
+            success: function (data) {
+
+                let html = '<div class="card">\n' +
+                    '                <div class="card-body">\n' +
+                    '                    <table class="table" id="table_content'+detail_id+'" style="width:100%">\n' +
+                    '                        <thead style="display: none">\n' +
+                    '                          <tr>\n' +
+                    '                            <th></th>\n' +
+                    '                          </tr>\n' +
+                    '                        </thead>\n' +
+                    '                        <tbody></tbody>\n' +
+                    '                    </table>\n' +
+                    '                    <ul class="pagination" id="table_content'+detail_id+'_ul"></ul>\n' +
+                    '<button type="button" onclick="close_comment(\''+detail_id+'\')" class="btn btn-primary btn-close">收起</button>' +
+                    '                </div>\n' +
+                    '            </div>';
+                $("#slide"+detail_id).html(html);
+                $("#slide"+detail_id).slideToggle();
+                $("#loading").addClass("hide");
+                let data_table_content = data;
+                let table_content = new table("table_content"+detail_id,data_table_content);
+
+                table_content;
+
+            }
+        })
+    }
+    </script>
+<script>
+    $(document).ready(function() {
+        //为当前窗口添加滚动条滚动事件（适用于所有可滚动的元素和 window 对象（浏览器窗口））
+        $(window).scroll(function () {
+            //创建一个变量存储当前窗口下移的高度
+            var scroTop = $(window).scrollTop();
+            //判断当前窗口滚动高度
+            //如果大于100，则显示顶部元素，否则隐藏顶部元素
+            if (scroTop > 100) {
+                $('#mengka').fadeOut(250,function(){
+                    $('#this').fadeIn(250).css('display','block');
+                });
+
+            } else {
+                $('#this').fadeOut(250,function(){
+                    $('#mengka').fadeIn(250);
+                });
+            }
+        });
+    })
+    </script>
+{% endblock %}

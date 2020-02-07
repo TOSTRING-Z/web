@@ -1,0 +1,10 @@
+第1次请求:
+Host: www.xn--by-6y6c831p.cn
+X-Real-Ip: 128.14.134.170
+X-Forwarded-For: 128.14.134.170
+Connection: close
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+Accept: */*
+Referer: http://106.53.77.53/
+Accept-Encoding: gzip
+

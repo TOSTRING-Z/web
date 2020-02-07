@@ -1,0 +1,341 @@
+{% extends "public.html" %}
+{% block title %}
+    M站_萌咔萌咔弹幕视频网_干净的动漫网站(´っω･｀｡)番剧搜索:{{ search }}
+{% endblock %}
+{% block keywords %}萌咔萌咔,{{ search }}{% endblock %}
+{% block description %}萌咔萌咔,简称M站( ,,´･ω･)ﾉ(´っω･｀｡)建立本网站,为二次元大家建立一个干净,舒适的╮(╯▽╰)╭ 补番环境。本网站设置最多6个播放源,应该不容易挂完吧( ๑´•ω•) (ㆆᴗㆆ){% endblock %}
+{% block zi_yuan %}{{ 'active' }}{% endblock %}
+{% block zhu_zhan %}message-modal-sel{% endblock %}
+{% block search %}{{ search }}{% endblock %}
+{% block zi_yuan_search %}
+<input type="text" name="zi_yuan_search_type" value="source" style="display: none">
+<input type="text" name="sort" value="year" style="display: none">
+<input type="text" name="filters" value="region:,year:,type:," style="display: none">
+{% endblock %}
+{% block body %}
+<div class="nav-area">
+    <div class="nav">
+        <div class="wrapper swiper-nav">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/region:.*?,/, 'region:,')">全部</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/region:.*?,/, 'region:日本,')">日本</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/region:.*?,/, 'region:大陆,')">大陆</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/region:.*?,/, 'region:台湾,')">台湾</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/region:.*?,/, 'region:英国,')">英国</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/region:.*?,/, 'region:美国,')">美国</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/region:.*?,/, 'region:韩国,')">韩国</a></li>
+            <li class="swiper-slide"></li>
+        </ul>
+        </div>
+    </div>
+</div>
+<div class="nav-area">
+    <div class="nav">
+        <div class="wrapper swiper-nav">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:,')">全部</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2020,')">2020</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2019,')">2019</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2018,')">2018</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2017,')">2017</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2016,')">2016</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2015,')">2015</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2014,')">2014</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2013,')">2013</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2012,')">2012</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2011,')">2011</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2010,')">2010</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2009,')">2009</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2008,')">2008</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2007,')">2007</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2006,')">2006</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2005,')">2005</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2004,')">2004</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2003,')">2003</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2002,')">2002</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2001,')">2001</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:2000,')">2000</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1999,')">1999</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1998,')">1998</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1997,')">1997</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1996,')">1996</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1995,')">1995</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1994,')">1994</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1993,')">1993</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1992,')">1992</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1991,')">1991</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1990,')">1990</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1989,')">1989</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1988,')">1988</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1987,')">1987</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1986,')">1986</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1985,')">1985</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1984,')">1984</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1983,')">1983</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1982,')">1982</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1981,')">1981</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1980,')">1980</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1979,')">1979</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1978,')">1978</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1977,')">1977</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1976,')">1976</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1975,')">1975</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1974,')">1974</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1973,')">1973</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1972,')">1972</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1971,')">1971</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1970,')">1970</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1968,')">1968</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1967,')">1967</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1966,')">1966</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1965,')">1965</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1964,')">1964</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1963,')">1963</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1962,')">1962</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1961,')">1961</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1960,')">1960</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1959,')">1959</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1958,')">1958</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1957,')">1957</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1956,')">1956</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1955,')">1955</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1954,')">1954</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1953,')">1953</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1952,')">1952</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1951,')">1951</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1950,')">1950</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1949,')">1949</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1948,')">1948</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1947,')">1947</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1946,')">1946</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1945,')">1945</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1944,')">1944</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1943,')">1943</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1942,')">1942</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1941,')">1941</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1940,')">1940</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1939,')">1939</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1938,')">1938</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1937,')">1937</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1935,')">1935</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1934,')">1934</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1932,')">1932</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/year:.*?,/, 'year:1926,')">1926</a></li>
+            <li class="swiper-slide"></li>
+        </ul>
+        </div>
+    </div>
+</div>
+<div class="nav-area">
+    <div class="nav">
+        <div class="wrapper swiper-nav">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:,')">全部</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:美少女,')">美少女</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:魔法,')">魔法</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:爱情,')">爱情</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:校园,')">校园</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:战争,')">战争</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:冒险,')">冒险</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:奇幻,')">奇幻</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:后宫,')">后宫</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:治愈,')">治愈</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:竞技,')">竞技</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:科幻,')">科幻</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:吸血鬼,')">吸血鬼</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:神魔,')">神魔</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:运动,')">运动</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:励志,')">励志</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:热血,')">热血</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:搞笑,')">搞笑</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:歌舞,')">歌舞</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:历史,')">历史</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:真人,')">真人</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:特摄,')">特摄</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:宠物,')">宠物</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:动作,')">动作</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:战斗,')">战斗</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:悬疑,')">悬疑</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:犯罪,')">犯罪</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:恋爱,')">恋爱</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:剧情,')">剧情</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:职场,')">职场</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:机战,')">机战</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:百合,')">百合</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:少女,')">少女</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:其它,')">其它</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:玄幻,')">玄幻</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:童话,')">童话</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:古装,')">古装</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:推理,')">推理</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:魔幻,')">魔幻</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:青春,')">青春</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:亲子,')">亲子</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:儿童,')">儿童</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:益智,')">益智</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:神话,')">神话</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:教育,')">教育</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:恐怖,')">恐怖</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:泡面番,')">泡面番</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:时装,')">时装</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:忍者,')">忍者</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:幼儿,')">幼儿</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:格斗,')">格斗</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:轻松,')">轻松</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:社会,')">社会</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:动画,')">动画</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:喜剧,')">喜剧</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:生活,')">生活</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:刑侦,')">刑侦</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:女性向,')">女性向</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:布袋戏,')">布袋戏</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:耽美,')">耽美</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:LOLI,')">LOLI</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:亲情,')">亲情</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:惊悚,')">惊悚</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:灾难,')">灾难</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:少年,')">少年</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:武侠,')">武侠</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:短片,')">短片</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:同人,')">同人</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:音乐,')">音乐</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:美食,')">美食</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:日常,')">日常</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:家庭,')">家庭</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:情感,')">情感</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:成人,')">成人</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:现代,')">现代</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:唯美,')">唯美</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:同性,')">同性</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:侦探,')">侦探</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:真人秀,')">真人秀</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:宫廷,')">宫廷</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:早教,')">早教</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:特别版,')">特别版</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:育儿,')">育儿</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:英雄,')">英雄</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:泡面,')">泡面</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:命运石之门,')">命运石之门</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:古代,')">古代</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:偶像,')">偶像</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:舞蹈,')">舞蹈</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:OVA,')">OVA</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:国产,')">国产</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:穿越,')">穿越</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:成长,')">成长</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:体育,')">体育</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:怪物,')">怪物</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:美少,')">美少</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:都市,')">都市</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:神魔魔法,')">神魔魔法</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:原创,')">原创</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:国语,')">国语</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:亲子机战,')">亲子机战</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:游戏,')">游戏</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:电击文库,')">电击文库</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:纪录片,')">纪录片</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:西部,')">西部</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:传记,')">传记</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:治愈系,')">治愈系</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:轻小说,')">轻小说</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:OVA版,')">OVA版</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:丧尸,')">丧尸</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:剧场版,')">剧场版</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:妹系列,')">妹系列</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:缺根茎,')">缺根茎</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:猛男必备,')">猛男必备</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:遇难,')">遇难</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:荒岛,')">荒岛</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:废柴,')">废柴</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:傲娇,')">傲娇</a></li>
+            <li class="swiper-slide"><a onclick="javascript:location.href=decodeURIComponent(window.location.href).replace(/type:.*?,/, 'type:童年,')">童年</a></li>
+            <li class="swiper-slide"></li>
+        </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block container %}
+    <div class="row">
+        <div class="col-lg-12">
+            <div>
+                <h5><img src="{{ url_for( 'static',filename='public/img/彩色视频.svg') }}" style="width:1.2em;margin: 0 5px 3px 0;">
+                    {{ search }}
+                    <nobr class="pull-right" style="font-size: 12px;line-height: 20px;">
+                        <a id="year" onclick="javascript:location.href=decodeURIComponent(window.location.href).split('sort').length>1?decodeURIComponent(window.location.href).replace(/sort=.*?&/, 'sort=year&'):decodeURIComponent(window.location.href)+'&sort=year&'"><i class="fa fa-level-down" aria-hidden="true"></i> 时间</a>
+                        <a id="browse" onclick="javascript:location.href=decodeURIComponent(window.location.href).split('sort').length>1?decodeURIComponent(window.location.href).replace(/sort=.*?&/, 'sort=browse&'):decodeURIComponent(window.location.href)+'&sort=browse&'"><i class="fa fa-level-down" aria-hidden="true"></i> 人气</a>
+                    </nobr>
+                </h5>
+                <div>
+                <div class="row" style="margin: 0 -4px" id="ziYuan"></div>
+                <ul class="pagination" id="ziYuan_ul"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+{% block public %}
+    <script>
+
+    var url = decodeURIComponent(window.location.href).split('&sort=');
+    if(url.length > 1){
+        if(url[1].split('&')[0] == 'year'){
+            $('#year').css('color','orange');
+        }
+        else{
+            $('#browse').css('color','orange');
+        }
+    }
+    else{
+        $('#year').css('color','orange');
+    }
+    $(document).ready(function () {
+
+
+        var data = {{ data|safe }};
+        var html = [];
+        for(i in data){
+            html_sub = '<div class="col-lg-2 col-4">' +
+                '            <div class="card toolTip" style="overflow: visible;">\n' +
+                '                <div class="card-body" style="padding:0">\n' +
+                '                    <div class="mv-title"><a href="/ziYuanDetail/'+data[i].id+'" title="'+data[i].title+'">'+data[i].title+'</a></div>\n' +
+                '                    <div class="mv-img"><img src="/static/public/img/timer.gif" imgPath="'+data[i].imgName+'" alt="'+data[i].title+'" class="img-fluid"></div><div class="mv-hover"><a href="/ziYuanDetail/'+data[i].id+'" title="'+data[i].title+'"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a></div>\n' +
+                '                </div>\n' +
+                '                <div class="toolTiptext">\n' +
+                '                    <div style="font-size:8px;padding:5px;text-align: justify;line-height:2em;color: #333">\n' +
+                '                        <b style="color: #fa6362;display: block;font-size: 10px">'+data[i].title+'</b>\n'+data[i].subtitle+
+                '                    </div>\n' +
+                '                </div>\n' +
+                '            </div>\n' +
+                '        </div>\n';
+                html[i] = {};
+                html[i]["main"] = html_sub;
+            }
+            var di = new divFen("ziYuan",html);
+            di;
+
+
+        function grep_sel(grep) {
+            var patt = new RegExp(grep);
+            return patt.exec(decodeURI(window.location))?(patt.exec(decodeURI(window.location))[1]!="" ? patt.exec(decodeURI(window.location))[1] : 'Null'):'Null';
+        }
+        var swiper_nav = new Swiper('.swiper-nav', {
+                slidesPerView: 'auto',
+                freeMode: true,
+                scrollbar: {
+                  el: '.swiper-scrollbar',
+                },
+                mousewheel: true,
+            });
+        $("a[onclick*="+grep_sel("filters=region:(.*?),year:.*?,type:.*?,")+"]").attr('class','active');
+        swiper_nav[1].slideTo($("a[onclick*="+grep_sel("filters=region:(.*?),year:.*?,type:.*?,")+"]").parent('li').index(), 1000, false);
+        $("a[onclick*="+grep_sel("filters=region:.*?,year:(.*?),type:.*?,")+"]").attr('class','active');
+        swiper_nav[2].slideTo($("a[onclick*="+grep_sel("filters=region:.*?,year:(.*?),type:.*?,")+"]").parent('li').index(), 1000, false);
+        $("a[onclick*="+grep_sel("filters=region:.*?,year:.*?,type:(.*?),")+"]").attr('class','active');
+        swiper_nav[3].slideTo($("a[onclick*="+grep_sel("filters=region:.*?,year:.*?,type:(.*?),")+"]").parent('li').index(), 1000, false);
+    });
+
+    </script>
+    <script src="{{ url_for( 'static',filename='js/divFen.js') }}"></script>
+{% endblock %}

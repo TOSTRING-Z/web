@@ -1,0 +1,9 @@
+第1次请求:
+Host: www.xn--by-6y6c831p.cn
+X-Real-Ip: 220.181.51.88
+X-Forwarded-For: 220.181.51.88
+Connection: close
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36
+Accept-Language: zh-cn,zh-tw
+Accept: */*
+

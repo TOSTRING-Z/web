@@ -1,0 +1,12 @@
+第1次请求:
+Host: www.xn--by-6y6c831p.cn
+X-Real-Ip: 183.42.32.48
+X-Forwarded-For: 183.42.32.48
+Connection: close
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 tieba/10.3.9
+Referer: http://c.tieba.baidu.com/
+Accept-Language: zh-tw
+Accept-Encoding: gzip, deflate
+

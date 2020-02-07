@@ -1,0 +1,9 @@
+第1次请求:
+Host: www.xn--by-6y6c831p.cn
+X-Real-Ip: 106.2.4.77
+X-Forwarded-For: 106.2.4.77
+Connection: close
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)
+Referer: http://106.53.77.53:80
+Accept-Encoding: gzip
+

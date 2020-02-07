@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/source.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/web.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/souce_web_TT_20191120-1.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/source.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/source_1.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/source_comment.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/source_response.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web2019.8.29.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web2019.8.30.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web2019.8.31.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web2019.9.1.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web20190921-29.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web_20191120-1.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web_source20190902.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web_source20190903.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web_source20190905.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web_source20190907.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web_source20190921-22.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web_source20190921.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web_source20191004-29.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web_source_dilidili20190907.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web_source_qqdm20191004-29.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web_source_tem20190904.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web_source_tem20190905.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/web_sourceqqdm.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/PycharmProjects/wo_de_lun_tan/wordpress_20191120-1.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/公共/sql/web_classification.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/公共/sql/web_comment.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/公共/sql/web_detail.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/公共/sql/web_files.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/公共/sql/web_main.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/公共/sql/web_plate.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/公共/sql/web_user.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/公共/sql/web_user_collection.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/公共/sql/web_user_comment_response.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/公共/sql/web_user_detail_response.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/公共/sql/web_user_follow.sql" dialect="MySQL" />
+  </component>
+</project>

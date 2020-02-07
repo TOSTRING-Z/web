@@ -1,0 +1,378 @@
+{% extends "public.html" %}
+{% block title %}
+    M站_萌咔萌咔弹幕视频网_干净的动漫网站(´っω･｀｡):{{ source.title }}【{{ source.path_arr[-1] }}】
+{% endblock %}
+{% block keywords %}{{ source.title }}【{{ source.path_arr[-1] }}】{% endblock %}
+{% block description %}{{ source.subtitle|safe }}{% endblock %}
+{% block zi_yuan %}{{ 'active' }}{% endblock %}
+{% block zi_yuan_search %}
+<input type="text" name="zi_yuan_search_type" value="source" style="display: none">
+<input type="text" name="sort" value="year" style="display: none">
+<input type="text" name="filters" value="region:,year:,type:," style="display: none">
+{% endblock %}
+{% block brand %}<a id="this" style="width:230px;text-overflow:ellipsis;color:#fff;display: none;font-size: 20px;overflow:hidden;white-space: nowrap">{{ source.title }}</a>{% endblock %}
+{% block css %}
+    <link href="https://www.moerats.com/usr/dplayer/DPlayer.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for( 'static',filename='public/OwO/OwO.min.css') }}">
+{% endblock %}
+{% block body %}
+<div class="detail">
+<div class="detail_info_back" style="background-image:url({{ source.imgName }});"></div>
+</div>
+<div class="container detail_info">
+<style>
+    </style>
+    <div class="row player">
+        <div class="col-lg-12">
+             <div id="mengkaby_player"></div>
+        </div>
+    </div>
+    <div class="row detail-gonggao top-d-5">
+                <div class="col-4 col-lg-2">
+                    <div class="swiper-gonggao-pic">
+                        <span class="picone"><img class="icon_xh" src="/static/public/img/葫芦.svg" alt=" ">网站</span>
+                        <span class="pictwo">公告</span>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-10">
+                    <div class="swiper-gonggao">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a title="如有bug，请留言给我谢谢大家！">
+                                    <div>如有bug，请留言给我谢谢大家！</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a title="开发不易，望大佬手下留情。">
+                                    <div>开发不易，望大佬手下留情。</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                            <a title="广告点击不会跳转的，大家放心">
+                                <div>广告点击不会跳转的，大家放心</div>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    <div class="row bofang">
+        <a id="sourceLove" data-source_id="{{ source.id }}">
+            {% if source.id in source_love %}
+            <i data-source_id="{{ source.id }}" class="fa fa-heart"></i>
+            {% else %}
+            <i data-source_id="{{ source.id }}" class="fa fa-heart-o"></i>
+            {% endif %}
+             喜欢
+        </a>
+        <a>分享</a>
+        <a href><i class="fa fa-star" aria-hidden="true"></i> 赞助</a>
+        <a id="prev">< 上一集</a>
+        <a id="next">下一集 ></a>
+    </div>
+    <div class="row">
+        <div class="mob-jian-jie">
+            <p>{{ source.title }}【{{ source.path_arr[-1] }}】</p>
+            <b>简介: </b>{{ source.subtitle|safe }}
+        </div>
+        <div class="mob-icon-slide"><i onclick="javascript:$('#fa-angle').attr('class',function(i,e) {e == 'fa fa-angle-down'?$('.mob-jian-jie').css('height','auto'):$('.mob-jian-jie').css('height','65px');return e == 'fa fa-angle-down'?'fa fa-angle-up':'fa fa-angle-down'})" id="fa-angle" class="fa fa-angle-down" aria-hidden="true"></i></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-4">
+            <a>
+            <div class="swiper-xianlu-pic">
+                    <span class="picone"><svg  style="display: inline-block" class="icon_xh" aria-hidden="true">
+                <use xlink:href="#icon-dong">
+                    <symbol id="icon-dong" viewBox="0 0 1024 1024"><path d="M890.1 687.3l-93.2-53.4 88.2-23.9c19.2-5.2 30.5-24.9 25.3-44.1-5.2-19.2-24.9-30.5-44.1-25.3l-157.6 42.7-124.6-71.5L708.5 440l157.7 42.2c3.1 0.8 6.2 1.2 9.3 1.2 15.9 0 30.4-10.6 34.7-26.6 5.1-19.2-6.2-38.9-25.4-44l-88.3-23.6 87.8-50.7c17.2-9.9 23.1-31.9 13.1-49.1-9.9-17.2-31.9-23.1-49.1-13.1L760.5 327l23.6-88.3c5.1-19.2-6.2-38.9-25.4-44-19.2-5.1-38.9 6.2-44 25.4l-42.2 157.7-124.6 72v-147l115.5-115.5c14-14 14-36.8 0-50.8s-36.8-14-50.8 0L548 201.1V99.8c0-19.8-16.1-35.9-35.9-35.9-19.8 0-35.9 16.1-35.9 35.9v101.4l-64.6-64.6c-14-14-36.8-14-50.8 0s-14 36.8 0 50.8l115.5 115.5V450l-125-71.7-42.7-157.6c-5.2-19.2-24.9-30.5-44.1-25.3-19.2 5.2-30.5 24.9-25.3 44.1l23.9 88.2-88-50.4c-17.2-9.9-39.2-3.9-49.1 13.3-9.9 17.2-3.9 39.2 13.3 49.1l88 50.4-88.4 23.9c-19.2 5.2-30.5 24.9-25.3 44.1 4.3 16 18.8 26.5 34.7 26.5 3.1 0 6.3-0.4 9.4-1.3l157.6-42.7 124.6 71.5L315.5 584l-157.7-42.2c-19.2-5.1-38.9 6.2-44 25.4-5.1 19.2 6.2 38.9 25.4 44l88.3 23.6-93 53.7c-17.2 9.9-23.1 31.9-13.1 49.1 6.7 11.5 18.7 18 31.2 18 6.1 0 12.3-1.6 17.9-4.8l93-53.7-23.6 88.3c-5.1 19.2 6.2 38.9 25.4 44 3.1 0.8 6.2 1.2 9.3 1.2 15.9 0 30.4-10.6 34.7-26.7l42.2-157.7 124.6-72V715L360.6 830.6c-14 14-14 36.8 0 50.8 7 7 16.2 10.5 25.4 10.5s18.4-3.5 25.4-10.5l64.6-64.6v107.5c0 19.8 16.1 35.9 35.9 35.9 19.8 0 35.9-16.1 35.9-35.9V816.7l64.6 64.6c14 14 36.8 14 50.8 0s14-36.8 0-50.8L547.9 715.1V574l125 71.7 42.7 157.6c4.3 16 18.8 26.5 34.7 26.5 3.1 0 6.3-0.4 9.4-1.3 19.2-5.2 30.5-24.9 25.3-44.1l-23.9-88.2 93.2 53.4c5.6 3.2 11.8 4.8 17.8 4.8 12.5 0 24.6-6.5 31.2-18.1 10-17.1 4-39.1-13.2-49z" fill="#81B6FE"></path><path d="M512 512m-146.6 0a146.6 146.6 0 1 0 293.2 0 146.6 146.6 0 1 0-293.2 0Z" fill="#5AA7F9"></path></symbol>
+                </use>
+            </svg>线路</span>
+                    <span class="pictwo">选择</span>
+                </div></a>
+        </div>
+        <div class="col-8 col-lg-10">
+        <div class="nav-area">
+            <div class="nav">
+                <div class="wrapper swiper-nav">
+                <ul class="swiper-wrapper">
+
+                    {% if source.path0 != '0' and source.path0 != '' and source.path0 != None %}
+                    <li class="swiper-slide"><a href="/ziYuanDetail/{{ source.id }}/0/{{ num }}">分流 0</a></li>
+                    {% endif %}
+                    {% if source.path1 != '0' and source.path1 != '' and source.path1 != None %}
+                    <li class="swiper-slide"><a href="/ziYuanDetail/{{ source.id }}/1/{{ num }}">分流 1</a></li>
+                    {% endif %}
+                    {% if source.path2 != '0' and source.path2 != '' and source.path2 != None %}
+                    <li class="swiper-slide"><a href="/ziYuanDetail/{{ source.id }}/2/{{ num }}">分流 2</a></li>
+                    {% endif %}
+                    {% if source.path3 != '0' and source.path3 != '' and source.path3 != None %}
+                    <li class="swiper-slide"><a href="/ziYuanDetail/{{ source.id }}/3/{{ num }}">分流 3</a></li>
+                    {% endif %}
+                    {% if source.path4 != '0' and source.path4 != '' and source.path4 != None %}
+                    <li class="swiper-slide"><a href="/ziYuanDetail/{{ source.id }}/4/{{ num }}">分流 4</a></li>
+                    {% endif %}
+                    {% if source.path5 != '0' and source.path5 != '' and source.path5 != None %}
+                    <li class="swiper-slide"><a href="/ziYuanDetail/{{ source.id }}/5/{{ num }}">分流 5</a></li>
+                    {% endif %}
+                    <li class="swiper-slide"><a></a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="num"></div>
+</div>
+{% endblock %}
+{% block container %}
+
+    <div>
+        <div class="col-lg-12">
+            <div class="tag tag-head">标签 / {{ source.type|safe }}</div>
+            <br><br>
+            <div class="subtitle">{{ source.subtitle|safe }}</div>
+        </div>
+        <div class="col-lg-12">
+            <div class="tag tag-head" style="margin-top:10px;line-height: 1.8">评论</div>
+            <br><br>
+            <form action="/owoSubmit/{{ source.id }}/{{ come }}" method="post">
+                <input type="text" style="display: none;" value="{{ num }}" name="num">
+                <textarea contenteditable='true' name="content" class="OwO-textarea form-control"></textarea>
+                <div class="OwO"></div>
+                <button class="OwO-button btn btn-primary pull-right" type="submit">发送</button>
+            </form>
+            <br><br>
+            <table class="table pinglun" id="table_detail" style="width:100%">
+                <thead style="display: none">
+                  <tr>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <ul class="pagination" id="table_detail_ul"></ul>
+        </div>
+        <br><br>
+    <h4 class="widget-title">推荐番</h4>
+        <div class="row">
+            {% for d in source_recommend %}
+                <div class="col-lg-2 col-4">
+                    <div class="card">
+                    <a href="/ziYuanDetail/{{ source_recommend[d].id }}">
+                        <div class="mv-title">{{ source_recommend[d].title }}</div>
+                        <div class="mv-img">
+                            <img src="{{ source_recommend[d].imgName }}" alt=" " class="img-fluid">
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <form method="post" action="/source_conmment_response">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">评论</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="form-group">
+                <input type="text" style="display: none" class="form-control" id="detail_id" name="detail_id">
+                <input type="text" style="display: none" class="form-control" id="target_source_id" name="target_source_id">
+                <input type="text" style="display: none" class="form-control" id="user_id" name="user_id">
+              </div>
+              <div class="form-group">
+                <textarea type="text" class="form-control" oninput="check(this)" required id="source_conmment_content" name="content"></textarea>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" onclick="return check_all()" class="btn btn-primary">发送</button>
+          </div>
+        </form>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sourceLoveModal" tabindex="-1" role="dialog" aria-labelledby="sourceLoveModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-body">
+        成功!
+        </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block public %}
+<script src="{{ url_for( 'static',filename='js/datatable.js') }}"></script>
+<!-- 初始化表格 -->
+<script type="text/javascript">
+    var table_detail = new table("table_detail",{{ data|safe }});
+    table_detail;
+</script>
+<!-- 初始化表格结束 -->
+<script src="https://cdn.bootcss.com/hls.js/8.0.0-beta.3/hls.js"></script>
+    <script>
+    $("#sourceLove").click(function (e) {
+        var source_id = $(e.currentTarget).data("source_id");
+        $.ajax({
+            url:"/sourceLove/"+source_id,
+            beforeSend:function(){
+              $("#loading").removeClass("hide");
+            },
+            complete:function () {
+                $("#loading").addClass("hide");
+            },
+            success: function (d) {
+                if(d == "success")
+                    $("#sourceLove i").attr("class","fa fa-heart");
+                else if(d == ""){
+                    $("#sourceLoveModal").modal("show");
+                    $(".modal-backdrop").removeAttr("class");
+                    $("#sourceLoveModal .modal-body").html("提交失败!");
+                }
+                else if(d == "successT")
+                    $("#sourceLove i").attr("class","fa fa-heart-o");
+            },
+            error:function () {
+                $("#sourceLoveModal").modal("show");
+                $(".modal-backdrop").removeAttr("class");
+                $("#sourceLoveModal .modal-body").html("提交失败!")
+            }
+        })
+    });
+    function check(e){
+        if (e.value == "")
+        e.setCustomValidity("请输入内容!");
+        else
+        e.setCustomValidity("");
+    }
+    function check_all(){
+        var content = document.getElementById("source_conmment_content");
+        content.setCustomValidity("");
+        if (content.checkValidity() == false||content.value == "")
+        content.setCustomValidity("请输入内容!");
+        else
+        content.setCustomValidity("");
+    }
+    function modalData(e){
+        setTimeout(function () {
+            document.getElementById("source_conmment_content").setCustomValidity("请输入内容!");
+            $("#detail_id").attr("value",$(e).data("detail_id"));
+            $("#target_source_id").attr("value",$(e).data("target_source_id"));
+            $("#user_id").attr("value",$(e).data("user_id"));
+        }, 300);
+    }
+
+    var url_arr='{{ source.path|safe }}'.split('@@');
+    var num = {{ num }};
+    for(i in url_arr){
+        var url_arr_arr = url_arr[i].split('|');
+        it = url_arr_arr[url_arr_arr.length - 1];
+        $("<a>",{
+            class:(i==num?"btn-num-sel":""),
+            href:"/ziYuanDetail/{{ source.id }}/{{ come }}/"+i,
+            text: it
+        }).appendTo("#num");
+    }
+    var url_info = url_arr[num].split('|');
+
+    $("#prev").click(function () {
+        if(num > 0){
+            location.href = "/ziYuanDetail/{{ source.id }}/{{ come }}/"+(num-1);
+        }
+    });
+    $("#next").click(function () {
+        if(num < url_arr.length-1){
+            location.href = "/ziYuanDetail/{{ source.id }}/{{ come }}/"+(num+1);
+        }
+    });
+    $("#mengkaby_player").html('<iframe src="/mv?type='+url_info[1]+'&uid=' + url_info[0] + '&come={{ come }}&source_id={{ source.id }}&num={{ num }}" height="100%" width="100%" scrolling="no" allowfullscreen="true" allowtransparency="true" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>');
+    </script>
+    <script src="{{ url_for( 'static',filename='public/OwO/OwO.min.js') }}"></script>
+	<script>
+	    var OwO_demo = new OwO({
+	        logo: 'OωO',
+	        container: document.getElementsByClassName('OwO')[0],
+	        target: document.getElementsByClassName('OwO-textarea')[0],
+	        api: '{{ url_for( 'static',filename='public/OwO/OwO.json') }}',
+	        position: 'down',
+	        wwidth: '240px',
+	        maxHeight: '250px'
+	    });
+	</script>
+<script>
+function close_comment(detail_id) {
+    $("#slide"+detail_id).slideToggle();
+    $("#slide"+detail_id).html("");
+}
+function comment(e) {
+    var detail_id = $(e).data("detail_id");
+    $.ajax({
+        url:"/source_comment/"+detail_id,
+        beforeSend:function(){
+          $("#loading").removeClass("hide");
+        },
+        dataType:"JSON",
+        success: function (data) {
+
+            let html = '<div class="card">\n' +
+                '                <div class="card-body">\n' +
+                '                    <table class="table" id="table_content'+detail_id+'" style="width:100%">\n' +
+                '                        <thead style="display: none">\n' +
+                '                          <tr>\n' +
+                '                            <th></th>\n' +
+                '                          </tr>\n' +
+                '                        </thead>\n' +
+                '                        <tbody></tbody>\n' +
+                '                    </table>\n' +
+                '                    <ul class="pagination" id="table_content'+detail_id+'_ul"></ul>\n' +
+                '<button type="button" onclick="close_comment(\''+detail_id+'\')" class="btn btn-primary btn-close">收起</button>' +
+
+                  '                </div>\n' +
+                '            </div>';
+            $("#slide"+detail_id).html(html);
+            $("#slide"+detail_id).slideToggle();
+            $("#loading").addClass("hide");
+            let data_table_content = data;
+            let table_content = new table("table_content"+detail_id,data_table_content);
+
+            table_content;
+
+        }
+    })
+}
+</script>
+<script>
+    $(document).ready(function() {
+        var swiper_gonggao = new Swiper('.swiper-gonggao', {
+            direction: 'vertical',
+            autoplay: {
+                delay: 2000,
+            },
+            loop: true,
+            pagination: {
+                clickable: true,
+            },
+        });
+
+        function grep_sel(grep) {
+            var patt = new RegExp(grep);
+            return patt.exec(decodeURI(window.location))?(patt.exec(decodeURI(window.location))[1]!="" ? patt.exec(decodeURI(window.location))[1] : 'Null'):'Null';
+        }
+        var swiper_nav = new Swiper('.swiper-nav', {
+                slidesPerView: 'auto',
+                freeMode: true,
+                scrollbar: {
+                  el: '.swiper-scrollbar',
+                },
+                mousewheel: true,
+            });
+        $(".swiper-slide a[href*='/ziYuanDetail/{{ source.id }}/{{ come }}/']").attr('class','active');
+        swiper_nav[1].slideTo($("a[href*='/ziYuanDetail/{{ source.id }}/{{ come }}/']").parent('li').index(), 1000, false);
+    });
+    </script>
+
+{% endblock %}

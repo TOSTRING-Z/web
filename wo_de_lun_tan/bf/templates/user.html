@@ -1,0 +1,520 @@
+{% extends "public.html" %}
+{% block title %}
+    M站_萌咔萌咔弹幕视频网_干净的动漫网站(´っω･｀｡):{{ user_data.user_name }}
+{% endblock %}
+{% block keywords %}mengka,mengkaby,mengkamengka,M站,动漫,二次元,萌咔,萌咔萌咔,萌咔by,{{ user_data.user_name }}{% endblock %}
+{% block description %}萌咔萌咔,简称M站吧( ,,´･ω･)ﾉ(´っω･｀｡)无聊时建立本网站,为二次元大家建立一个干净,舒适的╮(╯▽╰)╭ 补番环境。本网站设置最多6个播放源,应该不容易挂完吧( ๑´•ω•) (ㆆᴗㆆ){% endblock %}
+{% block container %}
+<style>
+.card-header font {
+        margin: 8px;
+        line-height: 20px;
+        padding: 8px;
+        position: relative;
+        cursor: pointer;
+    }
+    #sel-head {
+        position: relative;
+        text-align: center;
+    }
+    .user_sel{
+        color: orange;
+        position: relative;
+    }
+    .pagination {
+        margin-left: 10%;
+    }
+    .table td, .table th {
+        border-top: 0;
+    }
+    tr:first-child {
+        border-top: 0;
+    }
+    tr {
+        border-bottom: 2px solid #f0f0f0;
+    }
+    a {
+        color: #8590a6;
+    }
+    a:hover {
+        color: orange;
+    }
+    font:hover {
+        color: orange;
+    }
+    @media (min-width: 991px) {
+        .user-header h2 .fa {
+            color: orange;
+            font-weight: bold;
+        }
+        .user-header h2 .fa:last-child {
+            position: relative;
+            top: 2px;
+        }
+        .user-header .head-portrait {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            border: 3px solid #f6f6f6;
+            border-radius: 5px;
+            top: -70px;
+            left: 20px;
+        }
+        .user-header h2,.user-header h6,.user-header p {
+            color: #1a1a1a;
+            position: relative;
+            bottom: 15px;
+        }
+        .user-header h6,.user-header p {
+            opacity: 0.6;
+        }
+        .user-header em {
+            font-size: 25px;
+            opacity: 0.3;
+            position: relative;
+            bottom: 2px;
+        }
+        .user-header h6 i {
+            width: 16px;
+            margin: 0 8px;
+        }
+        .user_sel:before {
+            content: "";
+            position: absolute;
+            top: 35px;
+            left: 30%;
+            border: 2px solid;
+            width: 40%;
+            color: orange;
+            display: block;
+        }
+    }
+    @media (max-width: 990px) {
+        .user-header h2 .fa {
+            color: orange;
+            font-weight: bold;
+        }
+        .user-header h2 .fa:last-child {
+            position: relative;
+            top: 2px;
+        }
+        .user-header .head-portrait {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border: 4px solid #f6f6f6;
+            border-radius: 40px;
+            top: -70px;
+            left: 10px;
+        }
+        .user-header h2,.user-header h6,.user-header p {
+            color: #1a1a1a;
+            position: relative;
+            bottom: 0;
+        }
+        .user-header h6,.user-header p {
+            opacity: 0.6;
+        }
+        .user-header em {
+            font-size: 25px;
+            opacity: 0.3;
+            position: relative;
+            bottom: 2px;
+        }
+        .user-header h6 i {
+            width: 16px;
+            margin-right: 7px;
+        }
+        #head-right {
+            margin-left: 24px;
+        }
+        .user_sel:before {
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: 30%;
+            border: 2px solid;
+            width: 40%;
+            color: orange;
+            display: block;
+        }
+    }
+    .xiuGai {
+        position: absolute;
+        right: 0;
+        border-radius: 20px 0 0 20px;
+        background-color: orange;
+        padding: 10px;
+        color: #ffffff;
+        cursor: pointer;
+        opacity: 0.9;
+        font-size: 14px;
+        box-shadow: 0 1px 3px rgba(26,26,26,.1);
+        z-index: 100;
+    }
+    .xiuGai:hover {
+        color: #ffffff;
+        background-color: #d58512;
+    }
+    .Lv-2 {
+        background-color: {{ user_data.color }};
+        color:#ffffff;
+        font-weight: bold;
+        font-size: 20px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        position: absolute;
+        bottom: 0;
+        left:18px;
+        padding: 0 2px;
+    }
+    .Lv-1 {
+        background-color: {{ user_data.color }};
+        color:#ffffff;
+        font-weight: bold;
+        font-size: 14px;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        position: absolute;
+        bottom: 0;
+        padding: 0 2px;
+    }
+    .Lv {
+        display: inline-block;
+        position: relative;
+        bottom: 8px;
+        vertical-align: bottom;
+    }
+
+    #ziYuan {
+        padding: 20px;
+    }
+</style>
+
+<div class="row">
+    <div class="col-lg-12">
+
+        <div class="card user-header" style="overflow:visible">
+            <div class="card-header" style="">
+            <img src="/static/public/img/user-background.gif" class="img-fluid"></img>
+            </div>
+            <div class="card-body" style="overflow:visible">
+                {% if user_data.id == session.get('user_id') %}
+                <a class="xiuGai" href="/xiuGai/{{ user_data.id }}"> 修改</a>
+                {% endif %}
+
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="{{ url_for( 'static',filename='public/img/user/{0}'.format(user_data.id)) }}.png!300-300" alt="{{ user_data.user_name }}" class="img-fluid head-portrait">
+                    </div>
+                    <div id="head-right" class="col-lg-9">
+                        <div class="row">
+                                <div class="col-lg-12">
+                                    <h2>
+                                        <i class="fa fa-user-circle" aria-hidden="true"></i> {{ user_data.user_name }} <em>|</em>
+                                        {% if user_data.sex == 0 %}
+                                        <i class="fa fa-mars" aria-hidden="true"></i>
+                                        {% elif user_data.sex == 1 %}
+                                        <i class="fa fa-venus" aria-hidden="true"></i>
+                                        {% else %}
+                                        <i class="fa fa-genderless" aria-hidden="true"></i>
+                                        {% endif %}
+                                        <div class="Lv"><span class="Lv-1">Lv</span><span class="Lv-2">{{ user_data.level }}</span></div>
+                                    </h2>
+
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h6></h6>
+
+                                <h6><i class="fa fa-pencil-square-o" aria-hidden="true"></i>{{ user_data.sersonal_signature }}</h6>
+                                <div id="detail" class="collapse">
+                                    <h6><i class="fa fa-smile-o" aria-hidden="true"></i>{{ user_data.hobbies }}</h6>
+                                    <h6><i class="fa fa-registered" aria-hidden="true"></i>{{ user_data.registration_time }}</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <h6><a href="#detail" onclick="javascript:$('#fa-angle').attr('class',function(i,e) {return e == 'fa fa-angle-down'?'fa fa-angle-up':'fa fa-angle-down'})" data-toggle="collapse"><i id="fa-angle" class="fa fa-angle-down" aria-hidden="true"></i>查看详细资料</a></h6>
+                            </div>
+                            <div class="col-lg-3">
+                            {% if user_data.id != session.get('user_id') %}
+                                <button type="button" class="btn btn-primary" data-up_id="{{ user_data.id }}" id="guanZhu">
+                                    {% if user_data.id in user_follow %}
+                                    已关注
+                                    {% else %}
+                                    <b>+</b> 关注
+                                    {% endif %}
+                                    <button type="button" onclick="$('#leavingModal').modal('show')" class="btn btn-primary" id="liuYan">
+                                        留言
+                                    </button>
+                                </button>
+                                <script>
+                                    $("#guanZhu").click(function (e) {
+                                        var up_id = $(e.currentTarget).data("up_id");
+                                        $.ajax({
+                                            url:"/guanZhu/"+up_id,
+                                            beforeSend:function(){
+                                              $("#loading").removeClass("hide");
+                                            },
+                                            complete:function () {
+                                                $("#loading").addClass("hide");
+                                            },
+                                            success: function (d) {
+                                                if(d == "关注成功!")
+                                                    $("#guanZhu").html("已关注");
+                                                else
+                                                    $("#guanZhu").html("<b>+</b> 关注");
+                                            }
+                                        })
+                                    });
+                                    $("#liuYan").click(function (e) {
+
+                                    });
+                                </script>
+                            {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+
+        <div class="card">
+            <div id="sel-head" class="card-header">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-3 col-3"><font class="user_sel">动态</font></div>
+                        <div class="col-lg-3 col-3"><font>文章</font></div>
+                        <div class="col-lg-3 col-3"><font>评论</font></div>
+                        <div class="col-lg-3 col-3"><font>回复</font></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    {% if user_data.id == session.get('user_id') %}
+                    <div class="row">
+                        <div class="col-lg-3 col-3"><font>留言</font></div>
+                        <div class="col-lg-3 col-3"><font>关注</font></div>
+                        <div class="col-lg-3 col-3"><font>收藏</font></div>
+                        <div class="col-lg-3 col-3"><font>喜欢</font></div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            </div>
+            <div id="sel-body" class=card-body">
+                <div class="row" style="display: none;" id="ziYuan"></div>
+                <ul class="pagination" id="ziYuan_ul"></ul>
+                <table class="table" id="data_table" style="margin-left:5%;width:90%">
+                    <thead style="display: none">
+                      <tr>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <ul class="pagination" id="data_table_ul"></ul>
+            </div>
+            <script src="{{ url_for( 'static',filename='js/datatable.js') }}"></script>
+            <script>
+
+                $.ajax({
+                        url:"/user_sel/{{ user_data.id }}/动态",
+                        dataType:"JSON",
+
+                        success:function (data) {
+                            var data_table = new table("data_table",data);
+                            data_table;
+                        }
+                    });
+                $("#sel-head font").click(function (e) {
+                    var sel = e.target.innerText;
+                    $.ajax({
+                        url:"/user_sel/{{ user_data.id }}/"+sel,
+                        dataType:"JSON",
+                        beforeSend:function(){
+                          $("#loading").removeClass("hide");
+                        },
+                        complete:function () {
+                            $("#loading").addClass("hide");
+                        },
+                        success:function (data) {
+                            if(sel == "喜欢"){
+                                var html = [];
+                                for(i in data){
+                                    html_sub = '<div class="col-lg-3 col-6">' +
+                                        '            <div class="card">\n' +
+                                        '                <div class="card-body" style="padding:0">\n' +
+                                        '                    <div class="mv-title">'+data[i].title+data[i].type+'</div>\n' +
+                                        '                    <a class="mv-img" href="/ziYuanDetail/'+data[i].id+'/0/0"><img src="'+data[i].imgName+'" alt="'+data[i].title+'" class="img-fluid"></a>\n' +
+                                        '                    <div class="row mv-info">\n' +
+                                        '                        <span><i class="fa fa-eye" aria-hidden="true"></i>'+data[i].browse+'</span>\n' +
+                                        '                        <span class="mv-info-middle"><i class="fa fa-comments-o" aria-hidden="true"></i>'+data[i].comment+'</span>\n' +
+                                        '                        <span><i class="fa fa-heart-o" aria-hidden="true"></i></span>\n' +
+                                        '                    </div>\n' +
+                                        '                </div>\n' +
+                                        '            </div>' +
+                                        '        </div>';
+                                        html[i] = {};
+                                        html[i]["main"] = html_sub;
+                                    }
+                                    var di = new divFen("ziYuan",html);
+                                    di;
+                                    $('#data_table').css('display','none');
+                                    $('#data_table_ul').css('display','none');
+                                    $('#ziYuan').removeAttr("style");
+                                    $('#ziYuan_ul').removeAttr("style");
+                                    $("#sel-head font").removeAttr("class");
+                                    $(e.target).attr("class","user_sel");
+                                    return;
+                            }
+                            $('#data_table').css('display','');
+                            $('#data_table_ul').css('display','');
+                            $('#ziYuan').css('display','none');
+                            $('#ziYuan_ul').css('display','none');
+                            $("#sel-head font").removeAttr("class");
+                            $(e.target).attr("class","user_sel");
+                            var data_table = new table("data_table",data);
+                            data_table;
+                        }
+                    });
+                });
+                function close_comment(detail_id) {
+                    $("#"+detail_id).slideToggle();
+                    $("#"+detail_id).html("");
+                }
+                function comment(e) {
+                    var detail_id = $(e).data("detail_id");
+                    $.ajax({
+                        url:"/comment/"+detail_id,
+                        dataType:"JSON",
+                        beforeSend:function(){
+                          $("#loading").removeClass("hide");
+                        },
+                        complete:function () {
+                            $("#loading").addClass("hide");
+                        },
+                        success: function (data) {
+                            let html = '<div class="card">\n' +
+                                '                <div class="card-body">\n' +
+                                '                    <table class="table" id="table_content'+detail_id+'" style="width:100%">\n' +
+                                '                        <thead style="display: none">\n' +
+                                '                          <tr>\n' +
+                                '                            <th></th>\n' +
+                                '                          </tr>\n' +
+                                '                        </thead>\n' +
+                                '                        <tbody></tbody>\n' +
+                                '                    </table>\n' +
+                                '                    <ul class="pagination" id="table_content'+detail_id+'_ul"></ul>\n' +
+                                '<button type="button" onclick="close_comment(\''+detail_id+'\')" class="btn btn-primary btn-close">收起</button>' +
+                                '                </div>\n' +
+                                '            </div>';
+                            $("#"+detail_id).html(html);
+                            $("#"+detail_id).slideToggle();
+                            let data_table_content = data;
+                            let table_content = new table("table_content"+detail_id,data_table_content);
+                            table_content;
+                        }
+                    })
+                }
+            </script>
+            <script src="{{ url_for( 'static',filename='js/divFen.js') }}"></script>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <form method="post" action="/conmment_response">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">评论</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="form-group">
+                <input type="text" style="display: none" class="form-control" id="detail_id" name="detail_id">
+                <input type="text" style="display: none" class="form-control" id="target_title_id" name="target_title_id">
+                <input type="text" style="display: none" class="form-control" id="user_id" name="user_id">
+              </div>
+              <div class="form-group">
+                <textarea type="text" class="form-control" oninput="check(this)" required id="conmment_content" name="content"></textarea>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" onclick="return check_conmment()" class="btn btn-primary">发送</button>
+          </div>
+        </form>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="leavingModal" tabindex="-1" role="dialog" aria-labelledby="leavingModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <form method="post" action="/leavingMessage/{{ user_data.id }}">
+          <div class="modal-header">
+            <h5 class="modal-title" id="leavingModalLabel">留言</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="form-group">
+                <textarea type="text" class="form-control" required id="content" name="content"></textarea>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" onclick="return check_all()" class="btn btn-primary">发送</button>
+          </div>
+        </form>
+    </div>
+  </div>
+</div>
+    <script>
+    function check(e){
+        if (e.value == "")
+        e.setCustomValidity("请输入内容!");
+        else
+        e.setCustomValidity("");
+    }
+    function check_all(){
+        var content = document.getElementById("content");
+        content.setCustomValidity("");
+        if (content.checkValidity() == false||content.value == "")
+        content.setCustomValidity("请输入内容!");
+        else
+        content.setCustomValidity("");
+    }
+    function check_conmment(){
+        var content = document.getElementById("conmment_content");
+        content.setCustomValidity("");
+        if (content.checkValidity() == false||content.value == "")
+        content.setCustomValidity("请输入内容!");
+        else
+        content.setCustomValidity("");
+    }
+
+        function modalData(e){
+            setTimeout(function () {
+                document.getElementById("content").setCustomValidity("请输入内容!");
+                $("#detail_id").attr("value",$(e).data("detail_id"));
+                $("#target_title_id").attr("value",$(e).data("target_title_id"));
+                $("#user_name").attr("value",$(e).data("user_name"));
+                $("#user_id").attr("value",$(e).data("user_id"));
+            }, 300);
+        }
+    </script>
+{% endblock %}
+{% block public %}
+{% endblock %}
+

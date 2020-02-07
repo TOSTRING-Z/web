@@ -1,0 +1,11 @@
+第1次请求:
+Host: www.xn--by-6y6c831p.cn
+X-Real-Ip: 111.7.100.24
+X-Forwarded-For: 111.7.100.24
+Connection: close
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Sec-Fetch-Site: none
+Accept-Encoding: gzip, deflate, br
+

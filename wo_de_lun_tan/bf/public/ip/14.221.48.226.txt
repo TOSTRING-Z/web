@@ -1,0 +1,11 @@
+第1次请求:
+Host: www.xn--by-6y6c831p.cn
+X-Real-Ip: 14.221.48.226
+X-Forwarded-For: 14.221.48.226
+Connection: close
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 tieba/10.3.9
+Accept-Language: zh-cn
+Referer: https://tieba.baidu.com/mo/q/checkurl?url=https%3A%2F%2Fwww.xn--by-6y6c831p.cn%2FziYuanDetail%2F4511%2F0%2F0&meta=1&urlrefer=9d5098c6e2d4d3e06bc7930b725e1d99&_client_version=10.3.9&referer=c.tieba.baidu.com
+Accept-Encoding: br, gzip, deflate
+

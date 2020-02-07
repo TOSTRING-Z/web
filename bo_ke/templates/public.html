@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="no-js bg" lang="zh-cmn-Hans">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta charset="UTF-8"/>
+    <title>我的小屋</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
+    <link href="/static/css/tailwind.css" rel="stylesheet">
+    <link href="/static/css/butterbar.css" rel="stylesheet">
+    <link href="/static/css/OwO.min.css" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet">
+
+    <script src="https://cdn.staticfile.org/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="main px-4 flex flex-col lg:flex-row">
+    <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
+        <div class="lg:sticky top-0">
+            <div class="sidebar-content">
+                <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
+                    <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn"
+                       onclick="openMenu()"></i>
+                    <a href="/">
+                        <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12"
+                             src="/static/img/我.jpg" alt="">
+                    </a>
+                    <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl"
+                        style="animation-delay: 0.2s">我的小屋</h1>
+                </div>
+
+                <div class="animated fadeInLeft" style="animation-delay: 0.4s">
+                    <p class="my-4 text-gray-600 font-light hidden lg:block">
+                        一个记录美好生活的博客。
+                    </p>
+                    <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
+
+                        <a href="https://github.com/TOSTRING-Z" target="_blank"
+                           class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                            <i class="ri-github-fill"></i>
+                        </a>
+
+                        <a href="mailto:1084337496@qq.com" target="_blank"
+                           class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                            <i class="ri-qq-fill"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="loading" class="butterbar active hide">
+        <span class="bar"></span>
+    </div>
+
+    <div class="menu-container">
+        <i class="ri-arrow-left-line text-2xl cursor-pointer fadeInUp animated close-menu-btn"
+           onclick="closeMenu()"></i>
+        <div>
+            <a href="/about" class="menu" onclick="closeMenu()" style="animation-delay: 0s">
+                关于
+            </a>
+            <a href="/archives" class="menu" onclick="closeMenu()" style="animation-delay: 0.2s">
+                归档
+            </a>
+            <a href="/goal" class="menu" onclick="closeMenu()" style="animation-delay: 0.6000000000000001s">
+                目标
+            </a>
+            <a href="/tags" class="menu" onclick="closeMenu()" style="animation-delay: 0.8s">
+                标签
+            </a>
+        </div>
+        <div class="site-footer">
+        </div>
+    </div>
+    <div class="mask" onclick="closeMenu()">
+    </div>
+    {% block content %}{% endblock %}
+
+</div>
+<script src="/static/js/jquery.cookie.js"></script>
+<script src="/static/js/OwO.min.js"></script>
+<script src="/static/js/comment.js"></script>
+<script>
+    let patt1 = /(http.*?:\/\/.*?\/)/gi;
+    let result = patt1.exec(window.location.href);
+    window.LOCATION = {
+        url:result[1]
+    };
+
+    var imglazy = function () {
+        var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
+        if ("IntersectionObserver" in window) {
+            let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        let lazyImage = entry.target;
+                        lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`;
+                        lazyImage.classList.remove("lazy");
+                        lazyImageObserver.unobserve(lazyImage)
+                    }
+                });
+            });
+
+            lazyImages.forEach(function (lazyImage) {
+                lazyImageObserver.observe(lazyImage)
+            })
+        } else {
+            // Possibly fall back to a more compatible method here
+        }
+    };
+    /* 鼠标特效 */
+    var a_idx = 0;
+    $(document).ready(function ($) {
+        $("body").click(function (e) {
+            var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
+            var $i = $("<span/>").text(a[a_idx]);
+            a_idx = (a_idx + 1) % a.length;
+            var x = e.pageX,
+                y = e.pageY;
+            $i.css({
+                "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-weight": "bold",
+                "color": "#ff6651"
+            });
+            $("body").append($i);
+            $i.animate({
+                    "top": y - 180,
+                    "opacity": 0
+                },
+                1500,
+                function () {
+                    $i.remove();
+                });
+        });
+    });
+</script>
+<script>
+    var mComment = null;
+    var index = 0;
+    var unobserve = [];
+    function reset(){
+        index = 0;
+        unobserve = [];
+    }
+    function refresh(){
+        if(window.location.href == window.LOCATION.url)
+            $.getJSON(window.LOCATION.url+index+"/json",function (json) {
+                if(json.len < index)
+                    return;
+                json.data.forEach(((item) => {
+                    document.getElementById('content').innerHTML +=
+                        '<section id={id} class="post-item md:flex pb-12 animated fadeIn">\
+                            <a href={href} class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">\
+                                <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="\'{img}\'"></div>\
+                            </a>\
+                            <div class="content">\
+                                <a href={href}>\
+                                    <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">【归档/{tag}】{title}</h2>\
+                                </a>\
+                                <div class="post-abstract text-gray-700 font-light my-4">\
+                                    <p>\
+                                        {subtitle}\
+                                    </p>\
+                                </div>\
+                                <div class="text-gray-400 text-sm font-light">{time}</div>\
+                            </div>\
+                        </section>'.format({id:item.id,href:window.LOCATION.url+item.id,img:item.img,title:item.title,tag:item.tag,subtitle:item.subtitle,time:item.time})
+                }));
+                imglazy();
+                loadmore(json.len)
+            });
+        else if(/http.*?:\/\/.*?\/.*?\/tag/.test(window.location.href)){
+            let patt1 = /http.*?:\/\/.*?\/(.*?)\/tag/gi;
+            let result = patt1.exec(window.location.href);
+            $.getJSON(window.LOCATION.url+result[1]+"/"+index+"/tag",function (json) {
+                if(json.len <= index)
+                    return;
+                document.getElementById('content').innerHTML +='<h2 class="latest-article text-lg text-gray-700 mb-8">\
+                                                                <i class="ri-article-line"></i>\
+                                                                {tag}\
+                                                            </h2>'.format({tag:decodeURI(result[1])});
+                json.data.forEach(((item) => {
+                    document.getElementById('content').innerHTML +=
+                        '<section id={id} class="post-item md:flex pb-12 animated fadeIn">\
+                            <a href={href} class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">\
+                                <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="\'{img}\'"></div>\
+                            </a>\
+                            <div class="content">\
+                                <a href={href}>\
+                                    <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">【归档/{tag}】{title}</h2>\
+                                </a>\
+                                <div class="post-abstract text-gray-700 font-light my-4">\
+                                    <p>\
+                                        {subtitle}\
+                                    </p>\
+                                </div>\
+                                <div class="text-gray-400 text-sm font-light">{time}</div>\
+                            </div>\
+                        </section>'.format({id:item.id,href:window.LOCATION.url+item.id,img:item.img,title:item.title,tag:item.tag,subtitle:item.subtitle,time:item.time})
+                }));
+                imglazy();
+                loadmore(json.len)
+            });
+        }
+        else if(/http.*?:\/\/.*?\/archives/.test(window.location.href))
+            $.getJSON(window.LOCATION.url+index+"/json",function (json) {
+                if(json.len < index)
+                    return;
+                json.data.forEach(((item) => {
+                    document.getElementById('content').innerHTML +=
+                        '<section id={id} class="post-item md:flex pb-12 animated fadeIn">\
+                            <div class="content">\
+                                <a href={href}>\
+                                    <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0 animated fadeIn">【{tag}】{title}</h2>\
+                                </a>\
+                                <div class="text-sm font-light mt-5 mb-6 text-gray-400 animated fadeInDown">{time}</div>\
+                            </div>\
+                        </section>'.format({id:item.id,href:window.LOCATION.url+item.id,img:item.img,title:item.title,tag:item.tag,time:item.time})
+                }));
+                imglazy();
+                loadmore(json.len)
+            });
+        else if(/http.*?:\/\/.*?\/\d+/.test(window.location.href))
+            $.getJSON(window.LOCATION.url+window.location.href.match(/\d+/g)[window.location.href.match(/\d+/g).length-1]+"/detail",function (item) {
+                console.log(window.LOCATION.url);
+                mComment = new comment({
+                    comment_url: '/comment/'+window.location.href.match(/\d+/g)[window.location.href.match(/\d+/g).length-1],
+                    huifu_url: '/comment/huifu',
+                    id: 'content',
+                    loading:"loading",
+                    OwO:{
+                        api:"/static/js/OwO.json",
+                        detail_id:window.location.href.match(/\d+/g)[window.location.href.match(/\d+/g).length-1],
+                        type:"comment",
+                    }
+                });
+                document.getElementById('content').innerHTML =
+                    '<h1 class="text-3xl font-bold lg:mt-16">【{tag}】{title}</h1>\
+                     <div class="text-sm text-gray-700 lg:my-8">\
+                       {time} / read\
+                     </div>\
+                       <img class="post-feature-image rounded-lg mx-auto my-4" src="{img}" alt="">\
+                     <div class="post-content yue">\
+                     <p>{subtitle}</p>\
+                     {content}\
+                     </div>'.format({subtitle:item.subtitle,img:item.img,title:item.title,tag:item.tag,time:item.time,content:item.content});
+            });
+        else if(/http.*?:\/\/.*?\/tags/.test(window.location.href))
+            $.getJSON(window.LOCATION.url+"tags/class/",function (json) {
+                json.forEach(((item) => {
+                    document.getElementById('content').innerHTML +=
+                        '<a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="{href}" :style="{ \'animation-delay\': `${0 * 0.2}s` }">\
+                          <span class="flex-auto">{tag}</span>\
+                          <span class="flex rounded-full bg-gray-200 px-2 py-1 text-xs ml-1">{num}</span>\
+                        </a>'.format({href:window.LOCATION.url+item.tag+"/tag",tag:item.tag,num:item.num})
+                }));
+            });
+    }
+    function loadmore(len){
+        let lastSection = document.querySelector("section:last-child");
+        if ("IntersectionObserver" in window) {
+            let lastSectionObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                        let Section = entry.target;
+                        unobserve.push(Section);
+                        index = document.querySelectorAll("section").length;
+                        refresh();
+                        lastSectionObserver.unobserve(Section);
+                    }
+                })
+            });
+            if(len >= index)
+                lastSectionObserver.observe(lastSection);
+            unobserve.forEach((Section) => {
+                lastSectionObserver.unobserve(Section);
+            });
+
+        } else {
+            // Possibly fall back to a more compatible method here
+        }
+
+    }
+    /** string **/
+     String.prototype.format = function(args) {
+         var result = this;
+         if (arguments.length > 0) {
+             if (arguments.length == 1 && typeof (args) == "object") {
+                 for (var key in args) {
+                     if(args[key]!=undefined){
+                         var reg = new RegExp("({" + key + "})", "g");
+                         result = result.replace(reg, args[key]);
+                     }
+                 }
+             }
+             else {
+                 for (var i = 0; i < arguments.length; i++) {
+                     if (arguments[i] != undefined) {
+                         var reg= new RegExp("({)" + i + "(})", "g");
+                         result = result.replace(reg, arguments[i]);
+                     }
+                 }
+             }
+         }
+         return result;
+     };
+     refresh();
+</script>
+<script>
+
+    //document.addEventListener("DOMContentLoaded", imglazy());
+
+    const menuContainer = document.querySelector('.menu-container');
+    const menus = document.querySelectorAll('.menu-container .menu');
+    const mask = document.querySelector('.mask');
+    const contentWrapper = document.querySelector('.content-wrapper');
+    const latestArticle = document.querySelector('.latest-article');
+
+    const isHome = location.pathname === '/';
+    if (latestArticle) {
+        latestArticle.style.display = isHome ? 'block' : 'none';
+    }
+
+    const openMenu = () => {
+        menuContainer.classList.add('open');
+        menus.forEach(menu => {
+            menu.classList.add('animated', 'bounceInLeft')
+        });
+        mask.classList.add('open');
+        contentWrapper.classList.add('is-second')
+    };
+
+    const closeMenu = () => {
+        menuContainer.classList.remove('open');
+        menus.forEach(menu => {
+            menu.classList.remove('animated', 'bounceInLeft')
+        });
+        mask.classList.remove('open');
+        contentWrapper.classList.remove('is-second')
+    };
+</script>
+<script src="/static/js/pjax.js" type="text/javascript"></script>
+<script>
+    $(document).pjax('a:not(a[target="_blank"], [no-pjax],a[rel~="nofollow"])', {
+        container: '#content',
+        fragment: '#content',
+        timeout: 8000
+    }).on('pjax:send',
+    function() {
+        reset();
+        $('#loading').removeClass('hide');
+    }).on('pjax:click',
+    function() {
+        $('body,html').animate({
+            scrollTop: 0
+        },
+        100);
+    }).on('pjax:complete',
+    function() {
+        $('#loading').addClass('hide');
+        refresh();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+第1次请求:
+Host: www.xn--by-6y6c831p.cn
+X-Real-Ip: 123.125.71.110
+X-Forwarded-For: 123.125.71.110
+Connection: close
+User-Agent: Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)
+Accept-Language: zh-cn,zh-tw
+If-None-Match: "@NULL@"
+Accept: */*
+

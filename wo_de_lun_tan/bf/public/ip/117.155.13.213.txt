@@ -1,0 +1,40 @@
+第1次请求:
+Host: www.xn--by-6y6c831p.cn
+X-Real-Ip: 117.155.13.213
+X-Forwarded-For: 117.155.13.213
+Connection: close
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; vivo Y66i A Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/6.7.1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: https://m.baidu.com/tc?from=bd_graph_mm_tc&srd=1&dict=20&src=http%3A%2F%2Fxn--by-6y6c831p.cn%2F&sec=1569949451&di=ce82c986d41684d5
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.9
+
+第2次请求:
+Host: xn--by-6y6c831p.cn
+X-Real-Ip: 117.155.13.213
+X-Forwarded-For: 117.155.13.213
+Connection: close
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; vivo Y66i A Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/6.7.1.1
+Starttime: 1569949486422
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: https://www.xn--by-6y6c831p.cn/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.9
+Cookie: Hm_lvt_a4323e55562d0de759b3e2f9674e940d=1569949458; Hm_lpvt_a4323e55562d0de759b3e2f9674e940d=1569949458
+
+第3次请求:
+Host: xn--by-6y6c831p.cn
+X-Real-Ip: 117.155.13.213
+X-Forwarded-For: 117.155.13.213
+Connection: close
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; vivo Y66i A Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/6.7.1.1
+Starttime: 1569949521631
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: https://xn--by-6y6c831p.cn/ziYuanDetail/7413/0/0
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.9
+Cookie: Hm_lvt_a4323e55562d0de759b3e2f9674e940d=1569949458; Hm_lpvt_a4323e55562d0de759b3e2f9674e940d=1569949490
+

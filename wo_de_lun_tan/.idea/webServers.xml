@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="cf9f7e6b-1641-4722-9f4e-56e58a0e2ed2" name="106.53.77.53" url="http://106.53.77.53">
+        <fileTransfer host="106.53.77.53" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="56225cf3-009f-4261-b8cf-dd8f69f77b24" name="www" url="http://39.106.57.70">
+        <fileTransfer host="39.106.57.70" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="7718f48e-b380-4616-aa3c-cb9459bafde3" name="school_pan" url="http://10.100.0.202">
+        <fileTransfer host="10.100.0.202" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="63620add-47aa-435f-a9db-3fd5cf9a4b7c" name="local" url="http://localhost">
+        <fileTransfer host="localhost" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="fc66b87d-8e79-4477-9de9-90fbbe81ec72" name="www_new" url="http://39.98.139.1">
+        <fileTransfer host="39.98.139.1" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="3ae33182-8f7b-4a9c-a721-3661a755ce87" name="www_xinggang0" url="http://129.226.143.83">
+        <fileTransfer host="129.226.143.83" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
