@@ -1,8 +1,0 @@
-第1次请求:
-Host: www.xn--by-6y6c831p.cn
-X-Real-Ip: 54.184.82.93
-X-Forwarded-For: 54.184.82.93
-Connection: close
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.65 Safari/537.31
-Accept-Encoding: gzip, deflate
-
