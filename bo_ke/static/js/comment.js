@@ -2,29 +2,29 @@
     "use strict";
     //默认参数
     var plugin = {
-        id:null,
-        data:null,
-        comment_url:null,
-        huifu_url:null,
-        loading:"loading",
-        OwO:{
-            body:null,
-            api:"/static/js/OwO.json",
-            detail_id:null,
-            type:"comment",
+        id: null,
+        data: null,
+        comment_url: null,
+        huifu_url: null,
+        loading: "loading",
+        OwO: {
+            body: null,
+            api: "/static/js/OwO.json",
+            detail_id: null,
+            type: "comment",
         }
     };
-    let owoUpdateType = function(type,detail_id,target_user_id) {
-                if(type == "comment"){
-                    plugin.OwO.body[1].value = "comment";
-                    plugin.OwO.body[0].value = plugin.OwO.detail_id;
-                    plugin.OwO.body[3].value = 1;
-                }else if(type == "comment_response"){
-                    plugin.OwO.body[1].value = "comment_response";
-                    plugin.OwO.body[0].value = detail_id;
-                    plugin.OwO.body[3].value = target_user_id;
-                }
-            };
+    let owoUpdateType = function (type, detail_id, target_user_id) {
+        if (type == "comment") {
+            plugin.OwO.body[1].value = "comment";
+            plugin.OwO.body[0].value = plugin.OwO.detail_id;
+            plugin.OwO.body[3].value = 1;
+        } else if (type == "comment_response") {
+            plugin.OwO.body[1].value = "comment_response";
+            plugin.OwO.body[0].value = detail_id;
+            plugin.OwO.body[3].value = target_user_id;
+        }
+    };
     /** string **/
     String.prototype.format = function (args) {
         var result = this;
@@ -47,11 +47,13 @@
         }
         return result;
     };
+
     function parseDom(arg) {
         var objE = document.createElement("div");
         objE.innerHTML = arg;
         return objE.childNodes[0];
     }
+
     function comment_init(json) {
         return '<div class="comment shadow-lg flex bg-white rounded-lg p-6">\
                     <img class="h-10 w-10 md:h-14 md:w-14 rounded-full mx-0 mr-6" src="/static/img/user/{user}.jpg" alt="{user}">\
@@ -71,7 +73,7 @@
     }
 
     function huifu_init(json) {
-        return '<div class="comment shadow-lg flex bg-white p-6">\
+        return '<div class="comment shadow-lg flex bg-white my-2 p-6">\
                     <img class="h-8 w-8 md:h-14 md:w-14 rounded-full mx-0 mr-6" src="/static/img/user/{user}.jpg" alt="{user}">\
                     <div class="text-left">\
                         <div class="text-gray-400">\
@@ -86,6 +88,7 @@
                     </div>\
                 </div>'.format(json).format(json)
     }
+
     function owo_init(json) {
         return '<form action="/owoSubmit" class="" id="owoTextarea" method="post">\
                     <a id="clear_response" class="cursor-pointer" style="display: none">取消回复<i class="ri-chat-delete-line ml-1"></i></a>\
@@ -119,19 +122,20 @@
                     </div>\
                 </form>'.format(json)
     }
+
     let init = function (data, id) {
 
-        var comment_body = parseDom('<div id="{}_body" class="text-sm text-gray-700 lg:my-8"></div>'.format({"id":id}));
+        var comment_body = parseDom('<div id="{}_body" class="text-sm text-gray-700 lg:my-8"></div>'.format({"id": id}));
 
-        if(global.hasOwnProperty("OwO")){
+        if (global.hasOwnProperty("OwO")) {
             plugin.OwO.body = parseDom(owo_init({
-                "detail_id":plugin.OwO.detail_id,
-                "type":plugin.OwO.type,
-                "p":$.cookie('user_name')?"block":"none",
-                "div":$.cookie('user_name')?"none":"block",
-                "user_name":$.cookie('user_name') || "",
-                "email":$.cookie('email') || "",
-                "web_site":$.cookie('web_site') || ""
+                "detail_id": plugin.OwO.detail_id,
+                "type": plugin.OwO.type,
+                "p": $.cookie('user_name') ? "block" : "none",
+                "div": $.cookie('user_name') ? "none" : "block",
+                "user_name": $.cookie('user_name') || "",
+                "email": $.cookie('email') || "",
+                "web_site": $.cookie('web_site') || ""
             }));
             document.getElementById(id).appendChild(plugin.OwO.body);
             var OwO_demo = new OwO({
@@ -151,9 +155,9 @@
                         $.cookie('user_name', $('#user_name').val());
                         $.cookie('email', $('#email').val());
                         $.cookie('web_site', $('#web_site').val());
-                        if(global.hasOwnProperty('refresh')){
+                        if (global.hasOwnProperty('refresh')) {
                             refresh();
-                        }else{
+                        } else {
                             location.reload()
                         }
                     },
@@ -172,20 +176,23 @@
         document.getElementById(id).appendChild(comment_body);
 
         function pageFresh() {
-            comment_body.appendChild(parseDom("<div class='yum mt-6'>共有<b>{dataLength}</b>条评论</div>".format({"dataLength":data.length})));
+            comment_body.appendChild(parseDom("<div class='yum mt-6'>共有<b>{dataLength}</b>条评论</div>".format({"dataLength": data.length})));
             for (let key in data) {
                 comment_body.appendChild((parseDom(comment_init(data[key]))));
             }
-            $(".comment-num").click((e) => {plugin.comment(e)});
+            $(".comment-num").click((e) => {
+                plugin.comment(e)
+            });
             $(".commend-response").click((e) => {
-                owoUpdateType('comment_response',$(e.target).data("detail-id"),$(e.target).data("target-user-id"));
-                $("#clear_response").css("display","block");
+                owoUpdateType('comment_response', $(e.target).data("detail-id"), $(e.target).data("target-user-id"));
+                $("#clear_response").css("display", "block");
             });
             $("#clear_response").click(() => {
-                owoUpdateType('comment',null,null);
-                $("#clear_response").css("display","none");
+                owoUpdateType('comment', null, null);
+                $("#clear_response").css("display", "none");
             });
         }
+
         pageFresh();
 
     };
@@ -193,9 +200,9 @@
         var element = e.target;
         var detail_id = $(element).data("detail-id");
         $.ajax({
-            url: plugin.huifu_url+"?detail_id="+ detail_id,
+            url: plugin.huifu_url + "?detail_id=" + detail_id,
             beforeSend: function () {
-                $("#"+plugin.loading).removeClass("hide");
+                $("#" + plugin.loading).removeClass("hide");
             },
             dataType: "JSON",
             success: function (data) {
@@ -203,44 +210,44 @@
                 for (let key in data) {
                     huifu_body.appendChild(parseDom(huifu_init(data[key])));
                 }
-                if(!element.hasOwnProperty("hasClick")){
+                if (!element.hasOwnProperty("hasClick")) {
                     element.hasClick = true;
                     element.parentElement.parentElement.appendChild(huifu_body);
                 }
-                $("#"+plugin.loading).addClass("hide");
+                $("#" + plugin.loading).addClass("hide");
                 $(".commend-response").click((e) => {
-                    owoUpdateType('comment_response',$(e.target).data("detail-id"),$(e.target).data("target-user-id"));
-                    $("#clear_response").css("display","block");
+                    owoUpdateType('comment_response', $(e.target).data("detail-id"), $(e.target).data("target-user-id"));
+                    $("#clear_response").css("display", "block");
                 });
             }
         })
     };
 
-    function comment(plu){
+    function comment(plu) {
         plugin = (function (plu) {
-            if(!plu) {
+            if (!plu) {
                 return plugin
-            }else{
+            } else {
                 Object.keys(plu).forEach((key) => {
-                    if(typeof(plu[key]) == "object"){
+                    if (typeof (plu[key]) == "object") {
                         Object.keys(plu[key]).forEach((key1) => {
                             plugin[key][key1] = plu[key][key1];
                         })
-                    }else{
+                    } else {
                         plugin[key] = plu[key];
                     }
                 });
                 return plugin
             }
         })(plu);
-        if(plugin.data){
-            init(plugin.data,plugin.id);
-        }else{
+        if (plugin.data) {
+            init(plugin.data, plugin.id);
+        } else {
             $.ajax({
-                url:plugin.comment_url,
+                url: plugin.comment_url,
                 dataType: "JSON",
                 success: (data) => {
-                    init(data,plugin.id);
+                    init(data, plugin.id);
                 }
             })
         }

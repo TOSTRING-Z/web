@@ -1,15 +1,7 @@
-import requests
-from flask import Flask, request, render_template, url_for, redirect, session, flash, Response, make_response
-from functools import wraps
-import py.sql as pysql
-import json
-from werkzeug.utils import secure_filename
-import os
-import re
-import time
-import random
-from threading import Timer
+from flask import Flask, request
 from flask import jsonify
+
+import py.sql as pysql
 
 app = Flask(__name__)
 
@@ -42,4 +34,4 @@ def appVideo():
 
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1',port=5001, debug=True)
+    app.run(host='127.0.0.1', port=5001, debug=True)
